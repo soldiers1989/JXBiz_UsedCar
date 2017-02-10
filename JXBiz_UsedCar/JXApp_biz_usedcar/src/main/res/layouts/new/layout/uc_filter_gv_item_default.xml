@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/white">
+
+    <CheckBox
+        android:id="@+id/uc_world_cb_item"
+        android:layout_margin="6dp"
+        android:paddingLeft="-5dp"
+        android:paddingRight="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:button="@null"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:textSize="13sp"
+        android:textColor="@color/uc_filter_checkbox_text_selector"
+        android:background="@drawable/uc_filter_radio_hollow_selector"
+        android:text="大中型车" />
+
+
+</LinearLayout>

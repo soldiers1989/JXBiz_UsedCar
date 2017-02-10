@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/find_car_ll_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <com.etong.android.frame.widget.pulltofresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/find_car_lv_collect"
+            style="@style/MatchMatch"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="disabled"
+            ptr:ptrDrawable="@drawable/default_ptr_flip"
+            ptr:ptrHeaderBackground="@color/white"
+            ptr:ptrShowIndicator="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/find_car_filtrate_rl_null_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_block"
+            android:layout_alignParentLeft="true"
+            android:text="未找到符合条件的车系"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/find_car_filtrate_txt_null_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="重置条件"
+            android:textColor="#10A6E2"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+  <!--  <LinearLayout
+        android:id="@+id/models_contrast_ll_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@mipmap/models_contrast_null" />
+
+        <TextView
+            android:id="@+id/models_contrast_txt_null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="暂无内容"
+            android:textColor="@color/title_no_click_color"
+            android:textSize="15sp" />
+    </LinearLayout>-->
+
+    <include
+        layout="@layout/default_empty_listview"
+        android:visibility="gone"/>
+</LinearLayout>

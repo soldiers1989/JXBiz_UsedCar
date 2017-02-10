@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/used_car_rb_price"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="13sp"
+        android:button="@null"
+        android:textColor="@drawable/used_car_bg_text_color_selector"
+        android:background="@drawable/used_car_bg_price_item_selector"
+        android:text="不限"
+        android:gravity="center"
+        />
+
+</LinearLayout>

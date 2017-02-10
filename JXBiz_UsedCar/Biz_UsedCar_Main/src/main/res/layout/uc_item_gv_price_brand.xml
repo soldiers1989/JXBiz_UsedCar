@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_toLeftOf="@+id/uc_price_brand_divider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/uc_price_brand_iv_logo"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/uc_price_brand_txt_title"
+        android:textColor="@color/used_car_2a2a2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="大众"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/uc_price_brand_iv_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/uc_ic_all"
+        android:layout_marginLeft="5dp"
+        />
+
+
+</LinearLayout>
+
+    <View
+        android:id="@+id/uc_price_brand_divider"
+        android:layout_centerVertical="true"
+        style="@style/UC_VieticleLine"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

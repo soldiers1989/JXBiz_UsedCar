@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/uc_lv_header_item_bg_region_select_alway_city">
+
+    <TextView
+        android:id="@+id/uc_txt_header_item_region_select_always_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="长沙"
+        android:gravity="center"
+        android:textColor="@color/used_car_666666"
+        android:textSize="16sp" />
+
+</LinearLayout>

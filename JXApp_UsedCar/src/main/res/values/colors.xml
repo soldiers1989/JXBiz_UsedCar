@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="used_car_default_bg">#eeeff4</color>
+    <color name="used_car_4a4a4a">#4a4a4a</color>
+    <color name="used_car_10a6e2">#10a6e2</color>
+
+
+    <color name="used_car_979797">#979797</color>
+    <color name="used_car_10A6E2">#10A6E2</color>
+    <color name="used_car_fd513c">#fd513c</color>
+
+    <color name="used_car_468DE5">#468DE5</color>
+
+
+    <color name="used_car_222222">#222222</color>
+
+
+
+    <color name="used_car_8a8a8a">#8a8a8a</color>
+    <color name="used_car_2e2e2e">#2e2e2e</color>
+    <color name="used_car_dbdbdb">#dbdbdb</color>
+
+    <color name="used_car_9a9a9a">#9a9a9a</color>
+    <color name="used_car_e6e6e6">#e6e6e6</color>
+    <color name="used_car_7Fcf1c36">#7Fcf1c36</color>
+    <color name="used_car_cf1c36">#cf1c36</color>
+    <color name="used_car_2a2a2a">#2a2a2a</color>
+
+    <color name="used_car_E6E6E6">#E6E6E6</color>
+    <color name="used_car_909AAB">#909AAB</color> <!--R:144 G:154 B:171-->
+    <color name="used_car_CED2D9">#CED2D9</color>
+</resources>

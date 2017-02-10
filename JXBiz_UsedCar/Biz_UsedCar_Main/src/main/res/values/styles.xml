@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/titlebar_color</item>
+        <item name="colorPrimaryDark">@color/titlebar_color</item>
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="UC_myDivider" parent="divider">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/uc_gray_driver</item>
+    </style>
+
+    <style name="UC_BannerDefaultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">190dp</item>
+        <!--<item name="android:layout_marginTop">10dp</item>-->
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">3000</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">#44aaaaaa</item>
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/bga_banner_selector_point_hollow</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">6dp</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">800</item>
+        <!-- &lt;!&ndash; 提示文案的文字大小 &ndash;&gt;
+         <item name="banner_tipTextSize">10sp</item>
+         &lt;!&ndash; 提示文案的文字颜色 &ndash;&gt;
+         <item name="banner_tipTextColor">@android:color/white</item>-->
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <item name="banner_placeholderDrawable">@mipmap/uc_ic_banner_default</item>
+    </style>
+
+    <style name="UC_VieticleLine" parent="divider_vertical">
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:color">@color/used_car_E6E6E6</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="UC_LinearLayout_hor">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="UC_BaseChoiceStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#2a2a2a</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="UC_HomePageChoiceStyle" parent="UC_BaseChoiceStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="UC_Identify_Order_Button">
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <style name="UC_Identify_Order_Button_Red_Style" parent="UC_Identify_Order_Button">
+        <item name="android:background">@drawable/uc_identify_order_hollow_button_red</item>
+        <item name="android:textColor">@color/used_car_cf1c36</item>
+    </style>
+
+    <style name="UC_Identify_Order_Button_Black_Style" parent="UC_Identify_Order_Button">
+        <item name="android:background">@drawable/uc_identify_order_hollow_button_black</item>
+        <item name="android:textColor">@color/uc_3e3a39</item>
+    </style>
+
+    <style name="UC_Identify_Order_Button_Grey_Style" parent="UC_Identify_Order_Button">
+        <item name="android:background">@drawable/uc_identify_order_hollow_button_grey</item>
+        <item name="android:textColor">@color/uc_c9caca</item>
+    </style>
+
+    <style name="UC_Cancel_Order_Style" parent="MatchWrap">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/uc_cancel_order_text_selector</item>U
+    </style>
+
+
+    <style name="UC_PayMent_Style" parent="MatchWrap">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+
+    <style name="UC_Order_Button_Style" parent="MatchWrap">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/uc_bg_btn_red_normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="UC_Order_TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/uc_3e3a39</item>
+    </style>
+
+    <style name="UC_Order_TabLayoutTextAppearanceInverse" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/used_car_cf1c36</item>
+    </style>
+
+    <!-- 从底部进入退出动画 -->
+    <style name="PaywayPopuwindow" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <!-- 进入退出动画 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+</resources>

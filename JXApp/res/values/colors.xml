@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common -->
+    <color name="edit_text_color">#000000</color>
+    <color name="edit_hint_color">#B1B1B1</color>
+     <color name="border_color">#CED2D9</color>
+     <color name="border_other_color">#E6E6E6</color>
+      <color name="button_code_color">#1CA3E9</color>
+      <color name="login_text_color">#FFFFFF</color>
+      <color name="login_background_color">#1CA3E9</color>
+      <color name="login_background_none_color">#CED2D9</color>
+      <color name="code_number_color">#F5A623</color>
+      <color name="type_name_color">#323C4D</color>
+      <color name="state_name_color">#9B9B9B</color>
+      <color name="state_describe_color">#9C9C9C</color>
+       <color name="state_background">#EFF3FB</color>
+        <color name="item_background">#E6E6E6</color>
+      <color name="data_item_border_background">#F6F5F5</color>
+      
+      
+      
+      
+      
+      
+        <color name="background_red" >#F65D4A</color>
+    
+    <color name="name_color" >#4A4A4A</color>
+    <color name="year_color" >#1CA3E9</color>
+    <color name="gray_color" >#9595A0</color>
+     <color name="red_text_color" >#FD513C</color>
+     <color name="green_text_color" >#69BB0A</color>
+     
+      <color name="defualt_head_color1" >#9EA7FB</color>
+     <color name="defualt_head_color2" >#5CD4D2</color>
+     <color name="defualt_head_color3" >#FF9E48</color>
+     
+     <color name="image_border_color" >#B7B8BF</color>
+</resources>

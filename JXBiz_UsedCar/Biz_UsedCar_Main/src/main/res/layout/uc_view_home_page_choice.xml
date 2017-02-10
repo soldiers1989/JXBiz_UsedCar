@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/uc_tv_price_one"
+            style="@style/UC_HomePageChoiceStyle"
+            android:text="3万以下"
+            />
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+
+        <TextView
+            android:id="@+id/uc_tv_price_two"
+            style="@style/UC_HomePageChoiceStyle"
+            android:text="3-5万"
+            />
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+
+        <TextView
+            android:id="@+id/uc_tv_price_three"
+            style="@style/UC_HomePageChoiceStyle"
+            android:text="5-8万"
+            />
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+        <TextView
+            android:id="@+id/uc_tv_price_four"
+            style="@style/UC_HomePageChoiceStyle"
+            android:text="8-10万"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/uc_ll_brand_layout_one"
+            style="@style/UC_LinearLayout_hor"
+            >
+            <ImageView
+                android:id="@+id/uc_iv_brand_one"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/uc_ic_vc"
+                android:layout_marginRight="3dp"
+                />
+            <TextView
+                android:id="@+id/uc_tv_brand_name_one"
+                style="@style/UC_BaseChoiceStyle"
+                android:text="大众"
+                 />
+
+        </LinearLayout>
+
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/uc_ll_brand_layout_two"
+            style="@style/UC_LinearLayout_hor"
+            >
+            <ImageView
+                android:id="@+id/uc_iv_brand_two"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/uc_ic_buick"
+                android:layout_marginRight="3dp"
+                />
+            <TextView
+                android:id="@+id/uc_tv_brand_name_two"
+                style="@style/UC_BaseChoiceStyle"
+                android:text="别克"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/uc_ll_brand_layout_three"
+            style="@style/UC_LinearLayout_hor"
+            >
+            <ImageView
+                android:id="@+id/uc_iv_brand_three"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/uc_ic_chevrolet"
+                android:layout_marginRight="3dp"
+                />
+            <TextView
+                android:id="@+id/uc_tv_brand_name_three"
+                style="@style/UC_BaseChoiceStyle"
+                android:text="雪佛兰"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/uc_ll_brand_layout_four"
+            style="@style/UC_LinearLayout_hor"
+            >
+            <ImageView
+                android:id="@+id/uc_iv_brand_four"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/uc_ic_nissan"
+                android:layout_marginRight="3dp"
+                />
+            <TextView
+                android:id="@+id/uc_tv_brand_name_four"
+                style="@style/UC_BaseChoiceStyle"
+                android:text="日产"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/uc_ll_brand_layout_five"
+            style="@style/UC_LinearLayout_hor"
+            >
+            <ImageView
+                android:id="@+id/uc_iv_brand_five"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/uc_ic_vc"
+                android:layout_marginRight="3dp"
+                />
+            <TextView
+                android:id="@+id/uc_tv_brand_name_five"
+                style="@style/UC_BaseChoiceStyle"
+                android:text="丰田"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/uc_ll_brand_layout_six"
+            style="@style/UC_LinearLayout_hor"
+            >
+            <ImageView
+                android:id="@+id/uc_iv_brand_six"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/uc_ic_buick"
+                android:layout_marginRight="3dp"
+                />
+            <TextView
+                android:id="@+id/uc_tv_brand_name_six"
+                style="@style/UC_BaseChoiceStyle"
+                android:text="福特"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/uc_ll_brand_layout_seven"
+            style="@style/UC_LinearLayout_hor"
+
+            >
+            <ImageView
+                android:id="@+id/uc_iv_brand_sevev"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/uc_ic_chevrolet"
+                android:layout_marginRight="3dp"
+                />
+            <TextView
+                android:id="@+id/uc_tv_brand_name_seven"
+                style="@style/UC_BaseChoiceStyle"
+                android:text="本田"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/UC_VieticleLine"
+            android:layout_height="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/uc_ll_all"
+            style="@style/UC_LinearLayout_hor"
+            >
+
+            <TextView
+                style="@style/UC_BaseChoiceStyle"
+                android:text="全部"
+                android:textColor="#cf1c36"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/uc_ic_all"
+                android:layout_marginLeft="3dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

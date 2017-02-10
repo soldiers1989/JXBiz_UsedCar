@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_guide_content"
+    style="@style/MatchMatch"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_guide_viewpage"
+        style="@style/MatchMatch"/>
+
+    <LinearLayout
+        android:id="@+id/main_guide_llPoint"
+        style="@style/MatchWrap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/main_guide_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:background="#00000000"
+        android:visibility="gone"
+        />
+</RelativeLayout>

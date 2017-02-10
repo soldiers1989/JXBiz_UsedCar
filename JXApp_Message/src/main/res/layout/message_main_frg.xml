@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_main"
+    android:baselineAligned="false"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/message_titlebar" />
+    <com.etong.android.frame.widget.pulltofresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/message_sv_scroll"
+        android:overScrollMode="never"
+        style="@style/layout_full_all"
+
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderBackground="@color/white">
+
+        <!--android:visibility="visible">-->
+
+        <LinearLayout
+            android:id="@+id/message_ll_linear"
+            style="@style/layout_main"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+            <com.etong.android.frame.widget.loopbanner.BGABanner
+                android:id="@+id/banner_main_accordion"
+                style="@style/BannerDefaultStyle"
+                app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+                app:banner_transitionEffect="accordion" />
+           <!-- -->
+            <LinearLayout
+                android:layout_marginTop="-1dp"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                   <LinearLayout
+                       android:id="@+id/message_ll_time_limited_buy"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:layout_gravity="center"
+                       android:paddingTop="12dp"
+
+                       android:orientation="vertical">
+                     <!--  android:paddingBottom="12dp"-->
+                       <ImageView
+                           android:id="@+id/message_img_time_limited_buy"
+                           android:layout_width="26dp"
+                           android:layout_height="29.5dp"
+                           android:src="@mipmap/message_time_purchase_activity"
+                           android:layout_gravity="center"
+
+
+                           />
+                     <!--  android:layout_width="26dp"
+                       android:layout_height="29.5dp"-->
+                       <TextView
+                           android:id="@+id/message_txt_time_limited_buy"
+                           android:gravity="center"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:textColor="@color/car_name_color"
+                           android:textSize="14sp"
+                           android:textStyle="bold"
+                           android:text="限时购活动"/>
+
+
+                   </LinearLayout>
+
+                    <View
+                        style="@style/divider"
+                        />
+                    <LinearLayout
+                        android:id="@+id/message_ll_the_gallon"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="12dp"
+
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/message_img_the_gallon"
+                            android:layout_width="26dp"
+                            android:layout_height="29.5dp"
+                            android:src="@mipmap/message_purchase_discount"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/message_txt_the_gallon"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/car_name_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="购车优惠"/>
+
+
+                    </LinearLayout>
+                    <View
+                        style="@style/divider"
+                        />
+                    <LinearLayout
+                        android:id="@+id/message_ll_maintenance"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="12dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/message_img_maintenance"
+                            android:layout_width="26dp"
+                            android:layout_height="29.5dp"
+                            android:src="@mipmap/message_preferential_maintenance"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/message_txt_maintenance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/car_name_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="维保优惠"/>
+
+
+                    </LinearLayout>
+                   <!-- <View style="@style/divider"/>-->
+
+                </LinearLayout>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"
+                    />
+              <!--  style="@style/divider_vertical"-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/message_ll_motorzine"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+
+                        android:orientation="vertical">
+                       <!-- -->
+                        <ImageView
+                            android:id="@+id/message_img_motorzine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/message_car_news"
+                            android:layout_gravity="center"
+                            android:paddingTop="20dp"
+
+                            />
+                     <!--   -->
+                        <TextView
+                            android:id="@+id/message_txt_motorzine"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/car_name_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="车讯"/>
+
+                        <!--android:layout_marginTop="12dp"  android:layout_marginBottom="12dp"-->
+                    </LinearLayout>
+                    <View
+                        style="@style/divider"
+                        />
+                    <LinearLayout
+                        android:id="@+id/message_ll_car_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+
+                        android:orientation="vertical">
+                      <!--  -->
+                        <ImageView
+                            android:id="@+id/message_img_car_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/message_auto_show_activity"
+                            android:layout_gravity="center"
+                            android:paddingTop="30dp"
+
+                            />
+                        <TextView
+                            android:id="@+id/message_txt_car_show"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/car_name_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="18dp"
+                            android:text="车展活动"/>
+
+
+                    </LinearLayout>
+                    <!--<View style="@style/divider"/>-->
+
+                </LinearLayout>
+               <!-- <View
+                    style="@style/divider_vertical"
+                    />-->
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/message_ll_car_loans"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:paddingTop="12dp"
+
+                        android:orientation="vertical">
+                       <!-- android:paddingBottom="12dp"-->
+
+                        <ImageView
+                            android:id="@+id/message_img_car_loans"
+                            android:layout_width="26dp"
+                            android:layout_height="29.5dp"
+                            android:src="@mipmap/message_car_loan_discount"
+                            android:layout_gravity="center"
+
+
+                            />
+                        <TextView
+                            android:id="@+id/message_txt_car_loans"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/car_name_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="车贷优惠"/>
+
+
+                    </LinearLayout>
+                    <View
+                        style="@style/divider"
+                        />
+                    <LinearLayout
+                        android:id="@+id/message_ll_happly_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="12dp"
+
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                      <!--  android:paddingBottom="12dp"-->
+                        <ImageView
+                            android:id="@+id/message_img_happly_car"
+                            android:layout_width="26dp"
+                            android:layout_height="29.5dp"
+                            android:src="@mipmap/message_happy_card_activity"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/message_txt_happly_car"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/car_name_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="畅通卡活动"/>
+
+
+                    </LinearLayout>
+                    <View
+                        style="@style/divider"
+                        />
+                    <LinearLayout
+                        android:id="@+id/message_ll_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="12dp"
+
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/message_img_insurance"
+                            android:layout_width="26dp"
+                            android:layout_height="29.5dp"
+                            android:src="@mipmap/message_insurance_discount"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/message_txt_insurance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/car_name_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="保险优惠"/>
+
+
+                    </LinearLayout>
+                    <!--<View style="@style/divider"/>-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray_bg"/>
+
+
+            <com.etong.android.jxappmessage.utils.MessageNoScrollListView
+                android:id="@+id/message_lv_messagelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_bg"
+                android:scrollbars="none"/>
+
+
+            <!--<LinearLayout
+                android:id="@+id/layout_null"
+                style="@style/layout_full_all"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/default_empty_listview" />
+
+                <TextView
+                    android:id="@+id/default_empty_lv_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="请求数据失败,点击重试"
+                    android:textColor="#A0A0A0"
+                    android:textSize="15sp" />
+            </LinearLayout>-->
+        </LinearLayout>
+    </com.etong.android.frame.widget.pulltofresh.PullToRefreshScrollView>
+
+</LinearLayout>

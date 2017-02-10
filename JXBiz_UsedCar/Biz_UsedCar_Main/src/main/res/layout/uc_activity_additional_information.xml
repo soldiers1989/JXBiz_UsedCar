@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uc_activity_additional_information"
+    style="@style/MatchMatch"
+    android:background="@color/uc_gray_easy"
+    android:orientation="vertical"
+    tools:context="com.etong.android.jxbizusedcar.activity.UC_AdditionalInformationActivity">
+
+    <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_vertical"
+        android:text="请认真填写如下信息"
+        android:textColor="@color/uc_898989"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/uc_identify_order_rl_plate"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/uc_add_info_plate"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:text="车牌号"
+            android:textColor="@color/uc_3e3a39"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/uc_add_info_plate_type"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/uc_add_info_plate"
+            android:background="@drawable/uc_radiobutton_backgroud_selector"
+            android:drawableRight="@mipmap/used_car_mycar_next"
+            android:paddingRight="8dp"
+            android:text="湘"
+            android:textColor="@color/uc_3e3a39"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/uc_add_info_plate_letter"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/uc_add_info_plate_type"
+            android:background="@drawable/uc_radiobutton_backgroud_selector"
+            android:drawableRight="@mipmap/used_car_mycar_next"
+            android:paddingRight="8dp"
+            android:text="A"
+            android:textColor="@color/uc_3e3a39"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/uc_add_info_edt_plate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/uc_add_info_plate_letter"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入车牌号"
+            android:inputType="textUri|textMultiLine"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:maxLength="5"
+            android:textColor="@color/uc_3e3a39"
+            android:textColorHint="@color/uc_c9caca"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/uc_identify_order_ll_engine"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:id="@+id/uc_add_info_engine"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:text="发动机号"
+            android:textColor="@color/uc_3e3a39"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/uc_add_info_edt_engine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入发动机号"
+            android:inputType="number"
+            android:minLines="1"
+            android:maxLength="6"
+            android:paddingLeft="15dp"
+            android:textColor="@color/uc_3e3a39"
+            android:textColorHint="@color/uc_c9caca"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/uc_add_info_btn_complete"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/uc_bg_button_login"
+        android:text="完 成"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

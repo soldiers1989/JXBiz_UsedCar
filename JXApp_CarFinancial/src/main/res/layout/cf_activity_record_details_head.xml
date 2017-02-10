@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cf_ll_record_details_head"
+    style="@style/MatchWrap.Vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:divider="@drawable/horizon_divider"
+    android:showDividers="end"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/cf_txt_number"
+            style="@style/CF_Record"
+            android:layout_weight="0.5"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cf_txt_time"
+            style="@style/CF_Record"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cf_txt_should_also_money"
+            style="@style/CF_Record"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/cf_txt_real_also_money"
+            style="@style/CF_Record"
+            android:text="" />
+
+    </LinearLayout>
+</LinearLayout>

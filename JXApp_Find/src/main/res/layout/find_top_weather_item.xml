@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/find_top_ll_first_weather"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/find_top_img_daytime"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@mipmap/find_weather9"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/find_top_tv_daytime_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="阴"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/find_more_img_night"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@mipmap/find_weather9"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/find_more_tv_night_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="阴"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/find_top_tv_tair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="多云"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/find_top_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

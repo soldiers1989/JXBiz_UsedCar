@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fours_mycar_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeff4">
+
+    <RelativeLayout style="@style/layout_main"
+        android:background="#eeeff4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fours_mycar_rl_mycar_btns"
+            android:orientation="vertical"
+            android:background="#eeeff4">
+
+            <include layout="@layout/fours_me_mycar_titlebar" />
+
+            <ScrollView
+                android:id="@+id/fours_mycar_sv_scroll"
+                style="@style/layout_full_all"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:background="#eeeff4"
+                    style="@style/layout_main"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="必填区"
+                        android:textColor="@color/select_blue"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/fours_mycar_rl_mycar_add"
+                        style="@style/layout_full_width"
+                        android:layout_height="240dp"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:id="@+id/fours_mycar_img_put_head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/fours_mycar_picture" />
+
+                        <TextView
+                            android:id="@+id/fours_mycar_txt_put_headname"
+                            style="@style/text_large"
+                            android:layout_below="@id/fours_mycar_img_put_head"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="14dp"
+                            android:text="爱车图片"
+                            android:textColor="#4a4a4a" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/fours_mycar_img_mycar_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <View
+                        style="@style/divider"
+                        android:layout_marginTop="5dip" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/fours_mycar_txt_mycar_type_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="16dp"
+                            android:text="车      型:"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/fours_mycar_txt_mycar_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/fours_mycar_img"
+                            android:layout_toRightOf="@+id/fours_mycar_txt_mycar_type_name"
+                            android:background="@color/transparent"
+                            android:textColor="#979797"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/fours_mycar_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@mipmap/fours_mycar_next" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/divider"
+                        android:layout_marginLeft="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="16dp"
+                            android:text="车 牌 号:"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14sp" />
+
+
+                        <Button
+                            android:id="@+id/fours_mycar_btn_mycar_type"
+                            android:layout_width="45dp"
+                            android:layout_height="24dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/find_car_radiobutton_backgroud_selector"
+                            android:drawableRight="@mipmap/fours_mycar_pull_down"
+                            android:paddingRight="8dp"
+                            android:text="湘"
+                            android:textColor="@color/select_blue"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/fours_mycar_edt_mycar_plate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:capitalize="characters"
+                            android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                            android:hint="请输入完整车牌号"
+                            android:maxLength="6"
+                            android:singleLine="true"
+                            android:textColor="#979797"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/divider"
+                        android:layout_marginLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="16dp"
+                            android:text="车 架 号:"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/fours_mycar_edt_mycar_chassis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                            android:hint="请输入完整车架号"
+                            android:maxLength="17"
+                            android:singleLine="true"
+                            android:textColor="#979797"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/divider"
+                        android:layout_marginLeft="10dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="13dp"
+                            android:text="发动机号:"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/fours_mycar_edt_mycar_engine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:digits="0123456789"
+                            android:hint="请输入完整发动机号(发动机后六位)"
+                            android:maxLength="6"
+                            android:singleLine="true"
+                            android:textColor="#979797"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="选填区"
+                        android:textColor="@color/select_blue"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/fours_mycar_txt_mycar_buy_date_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="16dp"
+                            android:text="购买日期:"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/fours_mycar_txt_mycar_buy_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/fours_mycar_txt_mycar_buy_date_name"
+                            android:background="@color/transparent"
+                            android:textColor="#979797"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/fours_mycar_img_mycar_buy_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:background="@mipmap/fours_mycar_date" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/divider"
+                        android:layout_marginLeft="10dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/fours_mycar_txt_mycar_insurance_date_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="16dp"
+                            android:text="保险到期:"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/fours_mycar_txt_mycar_insurance_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/fours_mycar_txt_mycar_insurance_date_name"
+                            android:background="@color/transparent"
+                            android:textColor="#979797"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/fours_mycar_img_mycar_insurance_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:background="@mipmap/fours_mycar_date" />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/divider"
+                        android:layout_marginLeft="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="13dp"
+                            android:text="备       注:"
+                            android:textColor="#4a4a4a"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/fours_mycar_edt_mycar_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:hint="如本宝宝的爱车"
+                            android:textColor="#979797"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fours_mycar_rl_mycar_btns"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fours_mycar_mycar_btn_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="47.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/fours_mycar_default_corner_button_selector"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/fours_mycar_mycar_btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="47.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/fours_mycar_close_corner_button_selector"
+                android:text="关闭"
+                android:textColor="@color/select_blue"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fours_mycar_framlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="right" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

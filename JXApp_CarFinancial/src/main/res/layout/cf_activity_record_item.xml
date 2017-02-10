@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cf_ll_record_item"
+    style="@style/MatchMatch.Vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white"
+    android:divider="@drawable/horizon_divider"
+    android:showDividers="end">
+    <LinearLayout
+        style="@style/MatchMatch.Horizontal"
+        android:background="@color/white">
+
+    <TextView
+        android:id="@+id/cf_txt_number"
+        style="@style/CF_Record_item"
+        android:layout_weight="0.5"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cf_txt_applytime"
+        style="@style/CF_Record_item"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cf_txt_loantime"
+        style="@style/CF_Record_item"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cf_txt_money"
+        style="@style/CF_Record_item"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cf_txt_overdue_detail"
+        style="@style/CF_Record_item"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.3"
+        android:text=""
+        android:textColor="@color/a1_blue_color" />
+    </LinearLayout>
+</LinearLayout>
+

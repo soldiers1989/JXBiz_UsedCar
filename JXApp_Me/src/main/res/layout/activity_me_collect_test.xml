@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_main"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <include layout="@layout/me_titlebar_default"/>
+    <FrameLayout
+        android:id="@+id/me_fl_frg_collect"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </FrameLayout>
+</LinearLayout>

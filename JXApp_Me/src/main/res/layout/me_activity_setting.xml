@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/me_titlebar_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/me_txt_setting_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="消息提醒"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/me_txt_setting_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="非WIFI下使用省流量模式"
+                    android:textColor="@color/mycar_txt_color"
+                    android:textSize="16sp" />
+
+                <ToggleButton
+                    android:id="@+id/me_tb_setting_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:button="@drawable/me_setting_button_selector"
+                    android:textOff=""
+
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+            <TextView
+                android:id="@+id/me_txt_setting_share"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="分享设置"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+            <TextView
+                android:id="@+id/me_txt_setting_invite_friends"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="邀请好友使用"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+            <RelativeLayout
+                android:id="@+id/me_rl_setting_font_size"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/me_txt_setting_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="字号大小"
+                    android:textColor="@color/mycar_txt_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/me_txt_setting_font_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="中号字(默认)"
+                    android:textColor="#979797"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+            <RelativeLayout
+                android:id="@+id/me_rl_setting_cache"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/me_txt_setting_cache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="消息缓存"
+                    android:textColor="@color/mycar_txt_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/me_txt_setting_cache_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="922M"
+                    android:textColor="#979797"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View style="@style/divider"></View>
+
+            <TextView
+                android:id="@+id/me_txt_setting_richscan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="扫一扫"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+
+            <TextView
+                android:id="@+id/me_txt_setting_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="意见反馈"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+            <TextView
+                android:id="@+id/me_txt_setting_help"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="支付帮助"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+            <RelativeLayout
+                android:id="@+id/me_rl_setting_check_update"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/me_txt_setting_check_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="检测更新"
+                    android:textColor="@color/mycar_txt_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/me_txt_setting_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="当前版本V5.2.1-b221"
+                    android:textColor="#979797"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="10dp"></View>
+
+
+            <TextView
+                android:id="@+id/me_txt_setting_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="关于我们"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <View style="@style/divider"></View>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

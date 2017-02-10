@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:id="@+id/used_car_ll_result_head"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+   <TextView
+       android:id="@+id/used_car_txt_result_head"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="14sp"
+       android:textColor="#4a4a4a"
+       android:layout_marginLeft="17dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+
+       android:text=""/>
+   <View style="@style/divider"/>
+</LinearLayout>

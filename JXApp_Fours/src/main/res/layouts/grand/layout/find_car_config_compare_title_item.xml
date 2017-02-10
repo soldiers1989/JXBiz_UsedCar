@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/find_car_carconfig_compare_title_width"
+    android:layout_height="@dimen/find_car_carconfig_compare_title_height"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/find_car_carconfig_compare_title_width"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/find_car_carconfig_compare_title_width"
+            android:layout_height="@dimen/find_car_carconfig_compare_title_height"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/find_car_config_compare_title_name"
+                android:layout_width="@dimen/find_car_carconfig_compare_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="长安（轿车）奔奔MINI2012款1.0L手动时尚版套装"
+                android:textColor="#222222"
+                android:textSize="13.8sp" />
+
+            <TextView
+                android:id="@+id/find_car_config_compare_title_trial_run_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/find_car_config_compare_title_trial_run"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="试驾"
+                android:textColor="#FFF"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/find_car_config_compare_title_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:src="@mipmap/find_car_config_compare_title_delete" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#cecdd4" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uc_activity_pay_for_report_content"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/titlebar_otherd_feault" />
+
+    <TextView
+        style="@style/MatchWrap"
+        android:padding="15dp"
+        android:text="请选择支付方式" />
+
+
+    <RadioGroup
+        style="@style/MatchWrap.Horizontal"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp">
+
+
+        <RadioButton
+            android:id="@+id/uc_cb_pay_for_report_alipay"
+            style="@style/AutoMatch"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/uc_pay_way_selector"
+            android:drawableLeft="@mipmap/uc_ic_alipay"
+            android:paddingLeft="10dp"
+            android:visibility="visible"/>
+
+        <RadioButton
+            android:id="@+id/uc_cb_pay_for_report_wechat"
+            style="@style/AutoMatch"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/uc_pay_way_selector"
+            android:checked="true"
+            android:drawableLeft="@mipmap/uc_ic_wechat"
+            android:paddingLeft="10dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/uc_pay_for_report_tv_pay_money"
+        style="@style/MatchWrap"
+        android:background="@color/used_car_f6f6f6"
+        android:padding="15dp"
+        android:text="支付金额 " />
+
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/uc_cb_pay_for_report_read"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/uc_checkbox_pay_for_report_select"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/uc_tv_pay_for_report_read"
+            style="@style/WrapWrap"
+            android:layout_margin="10dp"
+            android:text="我已阅读过" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/uc_btn_pay_for_immediately"
+        style="@style/MatchWrap"
+        android:layout_margin="15dp"
+        android:background="@drawable/uc_btn_pay_for_report_selector"
+        android:gravity="center"
+        android:text="立即支付"
+        android:textColor="@drawable/uc_content_car_detail_bttom_txt_bg_sel_r"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+
+    android:orientation="horizontal" >
+    <!--android:paddingLeft="12dp"
+    android:paddingRight="12dp"-->
+    <ImageView
+        android:id="@+id/find_img_image"
+        style="@style/image_logo2" />
+
+    <RelativeLayout
+        style="@style/layout_full_height"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dip"
+
+        >
+  <!--     android:paddingRight="4dip"  android:layout_weight="1"-->
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:paddingTop="5dp"
+            android:id="@+id/find_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"
+            android:text="奇瑞 2016款故居固元膏UIhi景福宫自己改g"
+            android:textStyle="bold" />
+       <!-- android:gravity="top|left"
+        android:layout_weight="1"
+        style="@style/title_smaller"-->
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+         <!--   android:layout_weight="1"-->
+        <TextView
+            android:id="@+id/find_txt_price"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|left"
+            android:text="9.79万"
+            android:textColor="@color/more_text"
+            android:textSize="14sp"
+            />
+         <!--   -->
+            <TextView
+                android:id="@+id/find_txt_costprice"
+                style="@style/text_smaller"
+                android:gravity="bottom|left"
+                android:layout_marginLeft="15dp"
+                android:text="9.79万"
+                android:textSize="12sp"
+                android:textColor="@color/black_bg_color"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

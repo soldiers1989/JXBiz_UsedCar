@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/find_car_titlebar_order_defind"/>
+
+    <RadioGroup
+        android:id="@+id/fc_calcu_total_content_rg"
+        style="@style/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fc_calcu_total_content_rb_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/fc_calcu_total_title_left_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全款"
+            android:textColor="@drawable/fc_calcu_total_title_text_selector"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/fc_calcu_total_content_rb_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/fc_calcu_total_title_left_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="贷款"
+            android:textColor="@drawable/fc_calcu_total_title_text_selector"
+            android:textSize="15sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/fc_calcu_total_content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+</LinearLayout>

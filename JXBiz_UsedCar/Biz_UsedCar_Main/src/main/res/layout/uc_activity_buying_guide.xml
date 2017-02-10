@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uc_activity_buying_guide"
+    style="@style/MatchMatch.Vertical"
+    tools:context="com.etong.android.jxbizusedcar.activity.UC_BuyingGuideActivity">
+
+    <include layout="@layout/titlebar_otherd_feault"/>
+
+    <WebView
+        android:id="@+id/uc_web_webview"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        style="@style/MatchMatch"></WebView>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fours_select_car_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E9E9E9"
+        android:orientation="vertical">
+
+        <include layout="@layout/find_car_titlebar_order_defind" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="40dp"
+                android:gravity="center">
+
+                <ListView
+                    android:id="@+id/fc_car_config_select_car_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fours_txt_select_car_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="#FFF"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="添加"
+                android:textColor="#4881D1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fours_select_car_framlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="right" />
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

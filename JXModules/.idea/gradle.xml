@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../Etong_android_frame_as" />
+            <option value="$PROJECT_DIR$/../JXApp" />
+            <option value="$PROJECT_DIR$/../JXApp_CarAssistant" />
+            <option value="$PROJECT_DIR$/../JXApp_CarFinancial" />
+            <option value="$PROJECT_DIR$/../JXApp_Find" />
+            <option value="$PROJECT_DIR$/../JXApp_Fours" />
+            <option value="$PROJECT_DIR$/../JXApp_Me" />
+            <option value="$PROJECT_DIR$/../JXApp_Message" />
+            <option value="$PROJECT_DIR$/../JXApp_More" />
+            <option value="$PROJECT_DIR$/../JXApp_UsedCar" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../app" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

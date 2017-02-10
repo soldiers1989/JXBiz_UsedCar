@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/find_car_carconfig_compare_add_title_width"
+        android:layout_height="@dimen/find_car_carconfig_compare_item_height">
+
+        <TextView
+            android:id="@+id/find_car_detail_config_compare_list_item_title"
+            android:layout_width="@dimen/find_car_carconfig_compare_add_title_width"
+            android:layout_height="@dimen/find_car_carconfig_compare_item_height"
+            android:gravity="center"
+            android:text="参考价"
+            android:background="#EEEEEE"/>
+
+        <View android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#cecdd4"/>
+    </RelativeLayout>
+
+    <com.etong.android.jxappfours.find_car.grand.view.HVScrollView
+        android:id="@+id/find_car_detail_config_compare_list_item_sv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/find_car_carconfig_compare_item_height"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/find_car_detail_config_compare_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:orientation="horizontal"/>
+    </com.etong.android.jxappfours.find_car.grand.view.HVScrollView>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/cf_ll_record_item"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/white"
+    android:divider="@drawable/horizon_divider"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:showDividers="end">
+
+    <LinearLayout
+        style="@style/MatchMatch.Horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/cf_txt_or_number"
+            style="@style/CF_Record_item"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            tool:text="01" />
+
+        <TextView
+            android:id="@+id/cf_txt_or_order_number"
+            style="@style/CF_Record_item"
+            android:layout_gravity="center_vertical"
+            tool:text="D160727001" />
+
+        <TextView
+            android:id="@+id/cf_txt_or_createtime"
+            style="@style/CF_Record_item"
+            android:layout_gravity="center_vertical"
+            tool:text="2016-07-01" />
+
+        <TextView
+            android:id="@+id/cf_txt_or_order_category"
+            style="@style/CF_Record_item"
+            android:layout_gravity="center_vertical"
+            tool:text="预约买车" />
+
+        <TextView
+            android:id="@+id/cf_txt_or_status"
+            style="@style/CF_Record_item"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            tool:text="状态"
+            android:textColor="@color/a1_blue_color" />
+    </LinearLayout>
+</LinearLayout>
+

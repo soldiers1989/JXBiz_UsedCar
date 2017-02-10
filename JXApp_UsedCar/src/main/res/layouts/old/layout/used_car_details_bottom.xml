@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/default_appoint"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/used_car_collect"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="收藏"
+        android:textColor="@color/used_car_10a6e2"
+        android:background="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/used_car_order_car"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/used_car_10a6e2"
+        android:gravity="center"
+        android:text="预约看车"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

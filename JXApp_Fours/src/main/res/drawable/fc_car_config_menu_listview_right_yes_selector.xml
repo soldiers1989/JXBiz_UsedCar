@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/fc_car_config_menu_listview_right_yes" android:state_selected="true"></item>
+    <item android:drawable="@drawable/fc_car_config_menu_listview_right_yes" android:state_selected="true"></item>
+    <item android:drawable="@color/transparent"></item>
+
+
+</selector>

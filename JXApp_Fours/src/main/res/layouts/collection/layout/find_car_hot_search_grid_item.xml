@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/find_car_edit_text_background"
+
+    android:layout_gravity="center">
+  <!--      android:layout_marginRight="-5dp"
+    android:layout_marginLeft="-5dp"
+     android:baselineAligned="false"-->
+   <TextView
+       android:id="@+id/find_car_txt_hot"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:textSize="14sp"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:textColor="#4a4a4a"
+       android:gravity="center"
+       />
+   <!--  android:singleLine="true"
+          -->
+</LinearLayout>

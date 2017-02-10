@@ -1,0 +1,26 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+
+    
+    <!--  <RadioGroup
+            android:id="@+id/group_button"
+            style="@style/radio_group"
+            
+            android:padding="8dp" >  -->
+		 <RadioButton 
+		        android:id="@+id/rb_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:gravity="center"
+                
+                android:textSize="15sp"
+                android:textColor="@color/checkbox_text_color" />
+ 
+</LinearLayout> 

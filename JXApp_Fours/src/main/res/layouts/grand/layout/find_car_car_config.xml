@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fc_car_config_drawerlayout">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/find_car_titlebar_order_defind" />
+
+            <com.etong.android.frame.widget.pinnedlistview.PinnedSectionListView
+                android:id="@+id/find_car_config_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false" />
+        </LinearLayout>
+
+        <include layout="@layout/find_car_detail_bottom_btn" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/find_car_config_menu_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="#FFF"
+        android:orientation="vertical">
+
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>

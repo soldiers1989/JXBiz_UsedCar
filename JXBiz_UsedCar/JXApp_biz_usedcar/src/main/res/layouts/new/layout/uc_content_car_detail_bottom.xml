@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/default_appoint"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="#EFEFEF"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/uc_consult_btn_car_detail_bottom"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_weight="1"
+        android:background="@drawable/uc_content_car_detail_bottom_btn_bg"
+        android:gravity="center"
+        android:text="免费咨询"
+        android:textColor="@drawable/uc_content_car_detail_bttom_txt_bg_sel"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/uc_appoint_btn_car_detail_bottom"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_weight="1"
+        android:background="@drawable/uc_content_car_detail_bottom_btn_bg_r"
+        android:gravity="center"
+        android:text="预约看车"
+        android:textColor="@drawable/uc_content_car_detail_bttom_txt_bg_sel_r"
+        android:textSize="16sp" />
+
+</LinearLayout>

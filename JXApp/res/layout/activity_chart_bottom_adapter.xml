@@ -1,0 +1,25 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+android:background="@color/white"
+    >
+
+     <!-- <RadioGroup 
+         style="@style/radio_group"
+         > -->
+    <RadioButton 
+        android:id="@+id/bottom_text"
+        android:layout_width="63dp"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:gravity="center"
+      	android:button="@null"
+        android:background="@drawable/data_chart_bottom_selector"
+        android:textColor="@color/checkbox_text_color" >
+    </RadioButton>
+   <!--  </RadioGroup> -->
+ 
+</LinearLayout> 

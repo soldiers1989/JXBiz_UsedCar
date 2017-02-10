@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cf_activity_order_record"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/gray_bg"
+    tools:context="com.etong.android.jxappcarfinancial.activity.CF_OrderRecordActivity">
+
+    <include layout="@layout/cf_titlebar" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/cf_order_record_txt_classes"
+            style="@style/CF_OrderRecordTitleText"
+            android:text="" />
+
+        <CheckBox
+            android:id="@+id/cf_order_record_cb_item"
+            style="@style/CF_OrderRecordCheckText"
+            android:text="" />
+    </LinearLayout>
+
+    <include layout="@layout/cf_list_head_order_record" />
+
+    <com.etong.android.frame.widget.pulltofresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cf_order_record_lv"
+        style="@style/MatchMatch"
+        android:background="@color/gray_bg"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderBackground="@color/white"
+        ptr:ptrShowIndicator="false"
+        android:visibility="gone"/>
+
+</LinearLayout>

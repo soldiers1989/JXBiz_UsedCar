@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/uc_message_item_img"
+            style="@style/WrapWrap"
+            android:background="@mipmap/uc_recommended_daily"/>
+
+        <TextView
+            android:id="@+id/uc_message_item_txt"
+            style="@style/WrapWrap"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/car_name_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:text="限时购活动"/>
+
+    </LinearLayout>
+
+</LinearLayout>

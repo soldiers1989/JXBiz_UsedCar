@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">弘高车世界</string>
+    <string name="uc_login_mark">无需注册，输入手机号即可登录</string>
+    <string name="uc_recommend_car">以上是为您推荐的10辆好车,继续下滑查看全部推荐</string>
+    <string name="uc_hot_car_type">热销车系</string>
+    <string name="uc_home_page">二手车</string>
+    <string name="uc_message">资讯</string>
+    <string name="uc_more">更多</string>
+    <string name="uc_mine">我的</string>
+
+    <!--鉴定报告的付款金额-->
+    <string name="pay_for_report_price">18.0</string>
+</resources>

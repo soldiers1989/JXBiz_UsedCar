@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        style="@style/layout"
+        android:layout_width="match_parent"
+        android:background="@color/gray_bg"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+      >
+
+        <TextView
+            android:id="@+id/find_txt_year"
+            style="@style/text_block"
+            android:padding="8dip"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout"
+        android:layout_width="match_parent"
+        android:background="@color/gray_bg"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/vechile_series_zero"
+            style="@style/text_block"
+            android:padding="8dip"
+            android:text="1.4L/110kW涡轮增压" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_menu2"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            style="@style/icon_check"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/find_iv_image"
+            style="@style/image_logo2"
+
+            />
+
+        <RelativeLayout
+            style="@style/layout"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/find_txt_title"
+                style="@style/title_smaller"
+                android:gravity="left"
+                android:text="Sportback 35TFSI 手动进取型"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vechile_style_gearbox"
+                style="@style/text_smaller"
+                android:layout_below="@id/find_txt_title"
+                android:text="手动"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/layout"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="4dip" >
+
+            <TextView
+                style="@style/text_smallest"
+                android:layout_gravity="right"
+                android:text="指导价" />
+
+            <TextView
+                android:id="@+id/find_txt_guideprice"
+                style="@style/text_smallest"
+                android:text="18.49万"
+                android:textColor="@color/more_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

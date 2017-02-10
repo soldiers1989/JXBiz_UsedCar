@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:layout_height="129dp"
+    android:background="@color/uc_gray_easy"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:divider="@drawable/horizon_divider"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            style="@style/MatchMatch"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/uc_identify_order_number"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:text="订单编号：20161011103545"
+                android:textColor="@color/uc_898989"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/uc_identify_order_state"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/uc_898989"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/MatchMatch"
+            android:layout_height="59dp">
+
+            <ImageView
+                android:id="@+id/uc_order_img_log"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/uc_ic_identify_order_img" />
+
+            <TextView
+                android:id="@+id/uc_identify_order_txt_identify_content"
+                style="@style/WrapWrap"
+                android:paddingTop="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/uc_identify_order_money"
+                android:layout_toRightOf="@+id/uc_order_img_log"
+                android:lineSpacingExtra="4dp"
+                android:text="车鉴定\nVIN码：1G1BL52P7TR115520\n2016/10/12  10:35"
+                android:textColor="@color/uc_3e3a39"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/uc_identify_order_money"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="18.0元"
+                android:textColor="@color/used_car_cf1c36"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/MatchMatch"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/uc_identify_order_txt_annotation"
+                style="@style/WrapWrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/used_car_cf1c36"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/uc_identify_order_btn_right"
+                style="@style/UC_Identify_Order_Button_Red_Style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:padding="-5dp"
+                android:text="查看报告"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/uc_identify_order_btn_left"
+                style="@style/UC_Identify_Order_Button_Black_Style"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/uc_identify_order_btn_right"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:padding="-5dp"
+                android:text="退 款"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/uc_identify_order_btn_add"
+                style="@style/UC_Identify_Order_Button_Red_Style"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/uc_identify_order_btn_left"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:padding="-5dp"
+                android:text="补录信息"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

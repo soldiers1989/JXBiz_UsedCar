@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uc_content_regist_time_lv_child"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/used_car_f6f6f6"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/uc_tv_regist_time_lv_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:text="1月"
+        android:textColor="@color/used_car_2a2a2a"
+        android:textSize="18sp" />
+
+</RelativeLayout>

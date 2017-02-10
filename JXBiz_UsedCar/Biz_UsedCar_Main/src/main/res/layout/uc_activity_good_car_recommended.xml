@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_main"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/uc_titlebar_order" />-->
+    <include layout="@layout/titlebar_otherd_feault"/>
+
+    <FrameLayout
+        style="@style/MatchMatch.Vertical">
+    <com.etong.android.frame.widget.pulltofresh.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/uc_gv_good_car"
+        style="@style/layout_full_all"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderBackground="@color/white"
+        ptr:ptrShowIndicator="false"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"
+        android:gravity="center"
+        android:listSelector="@null"
+        android:scrollbars="none"/>
+
+        <RelativeLayout
+            android:id="@+id/uc_rl_accident"
+            style="@style/MatchMatch"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/used_car_iv_network"
+                style="@style/WrapWrap"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/uc_tv_hint"
+                style="@style/WrapWrap"
+                android:layout_below="@+id/used_car_iv_network"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

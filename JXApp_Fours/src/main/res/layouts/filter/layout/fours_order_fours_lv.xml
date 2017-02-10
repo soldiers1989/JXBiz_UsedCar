@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/fours_order_txt_td_order_fours_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4S-华洋奥通奥迪"
+        android:textColor="@color/fours_order_store_text_selector"
+        android:textSize="18sp"
+        android:padding="5dp"/>
+
+   <!-- <LinearLayout
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+  android:padding="10dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#979797"
+            android:text="位置 :  "/>
+
+        <TextView
+            android:id="@+id/fours_order_txt_td_order_fours_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#979797"
+            android:text="长沙市高新区麓谷汽车世界嘉运路36号（枫林三路和东方红路交汇处）"/>
+
+    </LinearLayout>-->
+
+</LinearLayout>

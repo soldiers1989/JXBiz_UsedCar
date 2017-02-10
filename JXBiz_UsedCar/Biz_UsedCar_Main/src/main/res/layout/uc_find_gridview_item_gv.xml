@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapWrap.Vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="46dp"
+        android:id="@+id/uc_find_img_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="46dp" />
+    <TextView
+        style="@style/WrapWrap"
+        android:id="@+id/uc_find_txt_title"
+        android:gravity="center"
+        android:textColor="#2a2a2a"
+        android:layout_marginTop="9dp"
+        android:textSize="13sp" />
+</LinearLayout>

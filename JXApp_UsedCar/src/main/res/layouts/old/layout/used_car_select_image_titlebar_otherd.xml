@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/models_contrast_rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+         android:paddingLeft="17dip" 
+         android:paddingRight="17dip" >
+
+        <ImageButton
+            android:id="@+id/find_car_select_image_ib_back_button"
+            style="@style/icon_back"
+            android:background="@mipmap/used_car_back_white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="返回" />
+
+        <TextView
+            android:id="@+id/find_car_select_image_txt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:layout_toLeftOf="@+id/find_car_select_image_txt_line"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/find_car_select_image_txt_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/find_car_select_image_txt_count_sum1"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/find_car_select_image_txt_count_sum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+       <!-- <TextView
+            android:id="@+id/models_contrast_txt_text"
+            style="@style/anchor"
+            android:layout_height="match_parent"
+
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/models_contrast_txt_select_count"
+
+            android:textColor="@color/title_color"
+            android:text="已选择（" />
+        <TextView
+            android:id="@+id/models_contrast_txt_select_count"
+            style="@style/anchor"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/models_contrast_txt_line"
+
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:text="0" />
+        <TextView
+            android:id="@+id/models_contrast_txt_line"
+            style="@style/anchor"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/models_contrast_txt_click_count"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:text="/" />
+        <TextView
+            android:id="@+id/models_contrast_txt_click_count"
+            style="@style/anchor"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/titlebar_next_button4"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:text="0" />
+        <TextView
+            android:id="@+id/titlebar_next_button4"
+            style="@style/anchor"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:text="）" />-->
+    </RelativeLayout>
+</LinearLayout>

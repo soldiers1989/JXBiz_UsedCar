@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_uc_car_assess_result_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.etong.android.jxbizusedcar.activity.UC_CarAssessResultWebActivity">
+
+    <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+    <WebView
+
+        android:id="@+id/uc_car_assess_result_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none" />
+
+        <ImageView
+            android:id="@+id/uc_car_assess_no_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@mipmap/uc_no_network" />
+
+</LinearLayout>

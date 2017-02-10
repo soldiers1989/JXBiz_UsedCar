@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar_otherd_feault" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/find_car_radiogroup"
+            style="@style/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/find_car_radiobutton_backgroud_selector"
+            android:orientation="horizontal">
+            <!-- -->
+            <RadioButton
+                android:id="@+id/find_car_left_radiobutton"
+
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/find_car_data_item_title_left_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="在售"
+                android:textColor="@color/find_car_checkbox_text_color"
+                android:textSize="15sp">
+                <!--android:background="@drawable/find_car_data_item_title_left_selector"-->
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/find_car_right_radiobutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/find_car_data_item_title_right_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="停售"
+                android:textColor="@color/find_car_checkbox_text_color"
+                android:textSize="15sp">
+                <!--android:background="@drawable/find_car_data_item_title_left_selector"-->
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.etong.android.frame.widget.pinnedlistview.PinnedSectionListView
+            android:id="@+id/fc_select_car_type_content_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+        <!--<LinearLayout
+            android:id="@+id/models_contrast_ll_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@mipmap/models_contrast_null" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="暂无内容"
+                android:textColor="@color/title_no_click_color"
+                android:textSize="15sp" />
+        </LinearLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_main"
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/layout_main"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/me_titlebar_default" />
+
+        <include layout="@layout/me_version_control_content" />
+
+        <LinearLayout style="@style/layout_left12">
+
+            <TextView
+                android:id="@+id/me_txt_check_update"
+                style="@style/text_smaller"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/default_right_enter_selector"
+                android:gravity="center_vertical"
+                android:text="检测更新"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <LinearLayout style="@style/layout_left12">
+
+            <TextView
+                android:id="@+id/me_txt_clear_cache"
+                style="@style/text_smaller"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/default_right_enter_selector"
+                android:gravity="center_vertical"
+                android:text="清除缓存"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <RelativeLayout style="@style/layout_left12"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/me_txt_show_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="显示天气指数"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/me_tb_show_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:button="@drawable/me_setting_button_selector"
+                android:textOff=""
+
+                android:textOn="" />
+        </RelativeLayout>
+
+      <!--  <View style="@style/divider" />-->
+
+        <RelativeLayout style="@style/layout_left12"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/me_txt_show_oil_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="显示今日油价"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/me_tb_show_oil_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:button="@drawable/me_setting_button_selector"
+                android:textOff=""
+
+                android:textOn="" />
+        </RelativeLayout>
+
+     <!--   <View style="@style/divider" />-->
+
+        <RelativeLayout
+            android:id="@+id/me_rl_open_location"
+            style="@style/layout_left12"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_smaller"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="开启定位"
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/me_txt_is_open_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textColor="@color/mycar_txt_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+       <!-- <View style="@style/divider" />-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/me_log_off"
+        style="@style/button_block"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/fours_mycar_default_corner_button_selector"
+        android:text="退出登录" />
+
+</RelativeLayout>

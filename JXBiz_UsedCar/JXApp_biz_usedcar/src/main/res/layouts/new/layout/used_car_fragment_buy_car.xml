@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vp_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/uc_rl_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/uc_cb_table_switch"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/used_car_btn_table_selector"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/uc_tv_input_content"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/uc_titlebar_back_button"
+                android:layout_toRightOf="@+id/uc_titlebar_back_button"
+                android:layout_toLeftOf="@+id/uc_cb_table_switch"
+                android:layout_toStartOf="@+id/uc_cb_table_switch"
+                android:background="@drawable/used_car_bg_edittext_gray"
+                android:drawableLeft="@mipmap/used_car_ic_search"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:padding="7dp"
+                android:text="请输入品牌 / 车系"
+                android:textColor="#9a9a9a"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/uc_titlebar_back_button"
+                style="@style/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@mipmap/iv_back_titlebar_default_grey"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="返回" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/uc_ll_choice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uc_rl_input_layout"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/uc_cb_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableRight="@drawable/used_car_bg_buy_car_choice_selector"
+                android:gravity="center"
+                android:padding="18dp"
+                android:text="排序"
+                android:textColor="@drawable/used_car_bg_text_color_selector" />
+
+            <View
+                style="@style/divider_vertical"
+                android:layout_height="13dp" />
+
+            <CheckBox
+                android:id="@+id/uc_cb_brand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableRight="@drawable/used_car_bg_buy_car_choice_selector"
+                android:gravity="center"
+                android:padding="18dp"
+                android:text="品牌"
+                android:textColor="@drawable/used_car_bg_text_color_selector" />
+
+            <View
+                style="@style/divider_vertical"
+                android:layout_height="13dp" />
+
+            <CheckBox
+                android:id="@+id/uc_cb_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableRight="@drawable/used_car_bg_buy_car_choice_selector"
+                android:gravity="center"
+                android:padding="18dp"
+                android:text="价格"
+                android:textColor="@drawable/used_car_bg_text_color_selector" />
+
+            <View
+                style="@style/divider_vertical"
+                android:layout_height="13dp" />
+
+            <CheckBox
+                android:id="@+id/uc_cb_choice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableRight="@drawable/used_car_bg_buy_car_choice_selector"
+                android:gravity="center"
+                android:padding="18dp"
+                android:text="筛选"
+                android:textColor="@drawable/used_car_bg_text_color_selector" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line"
+            style="@style/myDivider"
+            android:layout_below="@id/uc_ll_choice_layout"></View>
+
+        <LinearLayout
+            android:id="@+id/used_car_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_line"
+            android:visibility="gone">
+
+            <include layout="@layout/used_car_tag_layout" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/uc_xrv_fill_data_one_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/used_car_tag"
+            android:orientation="vertical">
+
+            <com.etong.android.frame.widget.pulltofresh.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/uc_xrv_fill_data_one"
+                style="@style/layout_full_all"
+                android:layout_below="@id/used_car_tag"
+                android:background="@color/white"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrDrawable="@drawable/default_ptr_flip"
+                ptr:ptrHeaderBackground="@color/white"
+                ptr:ptrShowIndicator="false"/>
+
+            <RelativeLayout
+                android:id="@+id/uc_rl_accident"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/used_car_iv_network"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/uc_tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/used_car_iv_network"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp"
+                    android:text="" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/uc_btn_call_phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="120dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@mipmap/used_car_btn_call_phone" />
+
+        <LinearLayout
+            android:id="@+id/uc_ll_all_pop_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_line"
+            android:orientation="vertical">
+
+            <!--排序的popwindow-->
+            <ListView
+                android:id="@+id/uc_lv_pop_fill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <!--价格的布局-->
+            <include
+                layout="@layout/used_car_view_price_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/uc_gray_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/uc_ll_all_pop_layout"
+            android:background="#66000000"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

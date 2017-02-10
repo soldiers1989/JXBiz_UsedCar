@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.etong.android.jxappmore.widget.MoreLineGridView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:stretchMode="columnWidth"
+    android:numColumns="3"
+    android:gravity="center"
+    android:background="@color/white"
+    android:listSelector="@null"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+</com.etong.android.jxappmore.widget.MoreLineGridView>
+
+    <!--    android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        -->

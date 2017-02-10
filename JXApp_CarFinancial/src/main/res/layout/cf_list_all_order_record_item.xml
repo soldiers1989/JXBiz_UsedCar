@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:background="@color/white">
+
+    <View
+        style="@style/divider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"></View>
+
+    <RelativeLayout
+        style="@style/MatchWrap.Horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/cf_all_or_item_title"
+            style="@style/CF_AllOrderRecordItemLeft"
+            android:text="新车类订单" />
+
+        <TextView
+            android:id="@+id/cf_all_or_item_number"
+            style="@style/CF_AllOrderRecordItemRight"
+            android:text="3条" />
+    </RelativeLayout>
+
+</LinearLayout>

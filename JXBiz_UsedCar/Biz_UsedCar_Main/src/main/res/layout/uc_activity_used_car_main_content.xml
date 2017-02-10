@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/uc_rg_tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <RadioButton
+            android:id="@+id/uc_rb_home_page"
+            style="@style/radio"
+            android:text="@string/uc_home_page"
+            android:textSize="10.5sp"
+            android:checked="true"
+            android:textColor="@drawable/uc_bg_tabhost_text_color_selector"
+            android:drawableTop="@drawable/uc_btn_home_page_selector"
+            />
+        <RadioButton
+            android:id="@+id/uc_rb_message"
+            style="@style/radio"
+            android:textSize="10.5sp"
+            android:drawableTop="@drawable/uc_btn_buy_car_selector"
+            android:textColor="@drawable/uc_bg_tabhost_text_color_selector"
+            android:text="@string/uc_message"
+            />
+        <RadioButton
+            android:id="@+id/uc_rb_more"
+            style="@style/radio"
+            android:textSize="10.5sp"
+            android:drawableTop="@drawable/uc_btn_sell_car_selector"
+            android:textColor="@drawable/uc_bg_tabhost_text_color_selector"
+            android:text="@string/uc_more"
+            />
+        <RadioButton
+            android:id="@+id/uc_rb_mine"
+            style="@style/radio"
+            android:textSize="10.5sp"
+            android:textColor="@drawable/uc_bg_tabhost_text_color_selector"
+            android:drawableTop="@drawable/uc_btn_mine_selector"
+            android:text="@string/uc_mine"
+            />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/uc_fl_fill_layouot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/uc_rg_tabhost"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+
+    <View
+        style="@style/UC_myDivider"
+        android:layout_above="@id/uc_rg_tabhost"
+        android:layout_height="1dp"
+        ></View>
+
+</RelativeLayout>

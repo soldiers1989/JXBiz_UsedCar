@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="@color/transparent"
+    android:focusable="false"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/UC_PayMent_Style">
+
+            <ImageView
+                android:id="@+id/uc_iv_pay_cancle"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/uc_ic_order_cancel" />
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_centerInParent="true"
+                android:text="付款详情"
+                android:textColor="@color/uc_color_3e3a39"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View style="@style/divider" />
+
+        <RelativeLayout style="@style/UC_PayMent_Style">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="订单编号"
+                android:textColor="@color/uc_color_898989"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/uc_order_tv_number"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/uc_color_898989"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View style="@style/divider" />
+
+        <RelativeLayout
+            style="@style/UC_PayMent_Style"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                style="@style/WrapWrap.Horizontal"
+                android:layout_alignParentRight="true">
+
+                <RadioButton
+                    android:id="@+id/uc_pay_buy_alipay"
+                    style="@style/WrapWrap"
+                    android:button="@drawable/uc_pay_way_selector"
+                    android:drawableLeft="@mipmap/uc_ic_alipay"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/uc_pay_buy_WeChat"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="15dp"
+                    android:button="@drawable/uc_pay_way_selector"
+                    android:checked="true"
+                    android:drawableLeft="@mipmap/uc_ic_wechat"
+                    android:paddingLeft="10dp" />
+
+            </RadioGroup>
+
+            <TextView
+
+                style="@style/WrapWrap"
+                android:text="订单账号"
+                android:textColor="@color/uc_color_898989"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView2" />
+        </RelativeLayout>
+
+        <View style="@style/divider" />
+
+        <RelativeLayout style="@style/UC_PayMent_Style">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="付款金额"
+                android:textColor="@color/uc_color_3e3a39"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/uc_tv_pay_money"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/uc_color_3e3a39"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/uc_bt_pay_makesure"
+            style="@style/UC_Order_Button_Style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="确定支付" />
+    </LinearLayout>
+
+</LinearLayout>

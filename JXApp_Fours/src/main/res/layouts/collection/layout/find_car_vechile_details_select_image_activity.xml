@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/models_contrast_rl_add_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/find_car_select_image_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:overScrollMode="never"></android.support.v4.view.ViewPager>
+
+        <!--android:layout_above="@+id/find_car_select_image_btn_enquiry"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <Button
+            android:id="@+id/find_car_select_image_btn_enquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/find_car_select_image_txt_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/find_car_select_image_background_corners"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            android:text="询底价"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/find_car_select_image_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/find_car_select_image_radiogroup"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="2016款 特别版"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RadioGroup
+
+            android:id="@+id/find_car_select_image_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/find_car_select_image_rb_facade"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="外观"
+                android:textColor="@color/find_car_select_image_text_color"
+                android:textSize="15sp"
+
+
+                >
+                <!--android:background="@drawable/models_contrast_radiobutton_background_color"
+                android:background="@drawable/find_car_data_item_title_left_selector"-->
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/find_car_select_image_rb_center_control"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:button="@null"
+                android:gravity="center"
+                android:text="中控"
+
+                android:textColor="@color/find_car_select_image_text_color"
+                android:textSize="15sp"
+
+                >
+                <!--android:background="@drawable/find_car_data_item_title_left_selector"-->
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/find_car_select_image_rb_seat"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:button="@null"
+                android:gravity="center"
+                android:text="座椅"
+
+                android:textColor="@color/find_car_select_image_text_color"
+                android:textSize="15sp">
+                <!--android:background="@drawable/find_car_data_item_title_left_selector"-->
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/find_car_select_image_rb_chart"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:button="@null"
+                android:gravity="center"
+                android:text="图解"
+
+                android:textColor="@color/find_car_select_image_text_color"
+                android:textSize="15sp">
+                <!--android:background="@drawable/find_car_data_item_title_left_selector"-->
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/find_car_select_image_rb_activity"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:button="@null"
+                android:gravity="center"
+                android:text="活动"
+
+                android:textColor="@color/find_car_select_image_text_color"
+                android:textSize="15sp">
+                <!--android:background="@drawable/find_car_data_item_title_left_selector"-->
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/find_car_select_image_rb_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:button="@null"
+                android:gravity="center"
+                android:text="细节"
+                android:textColor="@color/find_car_select_image_text_color"
+                android:textSize="15sp"
+
+                >
+                <!--android:background="@drawable/find_car_data_item_title_left_selector"-->
+            </RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <include layout="@layout/find_car_select_image_titlebar_otherd" />
+
+</RelativeLayout>
+
+
+
+
+

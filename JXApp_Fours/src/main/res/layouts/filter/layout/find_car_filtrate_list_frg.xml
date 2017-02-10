@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/find_car_rl_filtrate_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/find_car_ll_filtrate_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ListView
+                android:id="@+id/find_car_lv_filtrate_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/find_car_filtrate_result_btn_uptop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent_bg"
+            android:padding="20dp"
+            android:src="@mipmap/fours_up_top"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/find_car_filtrate_result_rl_null_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_block"
+            android:layout_alignParentLeft="true"
+            android:text="未找到符合条件的车系"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/find_car_filtrate_result_txt_null_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="重置条件"
+            android:textColor="#10A6E2"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/filtrate_result_ll_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@mipmap/models_contrast_null" />
+
+        <TextView
+            android:id="@+id/filtrate_result_txt_null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="暂无内容"
+            android:textColor="@color/title_no_click_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

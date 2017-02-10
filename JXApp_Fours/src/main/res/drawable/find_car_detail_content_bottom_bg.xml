@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" ><!--
+    <item android:state_checked="true" android:drawable="#10a6e2" ></item>
+    <item android:state_checked="false" android:drawable="#ffffff"></item>
+-->
+
+    <item android:state_checked="true" android:drawable="@color/find_car_detail_content_bottom_selector_bg" ></item>
+    <item android:state_checked="false" android:drawable="@color/find_car_detail_content_bottom_normal_bg"></item>
+</selector>

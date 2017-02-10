@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/find_rl_vechile_left"
+        style="@style/layout_full_height"
+        android:layout_width="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="4.5dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/find_image_border"
+         >
+        <!---->
+
+        <ImageView
+            android:id="@+id/find_img_vechile_image1"
+            style="@style/image_full_width"
+            android:layout_above="@+id/find_txt_vechile_title1"
+            android:adjustViewBounds="true"
+            android:maxWidth="998dp"
+            android:maxHeight="737dp"
+            />
+
+        <RelativeLayout style="@style/layout" >
+
+         <!--   android:adjustViewBounds="true"
+         <ImageView
+                android:id="@+id/cuxiaoche_icon1"
+                style="@style/image"
+                android:src="@drawable/bg_cuxiaoche" /> -->
+
+           <!-- <TextView
+                android:id="@+id/cuxiaoche_zhijiang1"
+                style="@style/text_bold"
+                android:layout_centerVertical="true"
+                android:paddingLeft="2dp"
+                android:textColor="@color/white"
+                android:textSize="15sp" />-->
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/find_txt_vechile_title1"
+            style="@style/text_smaller"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"
+            android:layout_above="@+id/find_txt_vechile_price1"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="4dp"
+            android:text="奇瑞"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/find_txt_vechile_price1"
+            style="@style/text_smaller"
+            android:textColor="@color/more_text"
+            android:textSize="14sp"
+            android:text="9.74万"
+            android:layout_alignParentBottom="true"
+            android:gravity="left"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/find_txt_discard_price1"
+            style="@style/text_smaller"
+            android:textSize="10sp"
+            android:text="10.47万"
+            android:textColor="@color/black_bg_color"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/find_txt_vechile_price1"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/find_rl_vechile_right"
+        style="@style/layout_full_height"
+        android:layout_width="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4.5dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/find_image_border" >
+
+        <ImageView
+            android:id="@+id/find_img_vechile_image2"
+            style="@style/image_full_width"
+            android:layout_above="@+id/find_txt_vechile_title2"
+            android:adjustViewBounds="true"
+            android:maxWidth="998dp"
+            android:maxHeight="737dp"/>
+
+        <RelativeLayout style="@style/layout" >
+
+            <!-- <ImageView
+                android:id="@+id/cuxiaoche_icon2"
+                style="@style/image"
+                android:src="@drawable/bg_cuxiaoche" /> -->
+
+            <!--<TextView
+                android:id="@+id/cuxiaoche_zhijiang2"
+                style="@style/text_bold"
+                android:layout_centerVertical="true"
+                android:paddingLeft="2dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp" />-->
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/find_txt_vechile_title2"
+            style="@style/text_smaller"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"
+            android:layout_above="@+id/find_txt_vechile_price2"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="4dp"
+            android:text="奇瑞"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/find_txt_vechile_price2"
+            style="@style/text_smaller"
+            android:textColor="@color/more_text"
+            android:textSize="14sp"
+            android:layout_alignParentBottom="true"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="50万"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/find_txt_discard_price2"
+            style="@style/text_smaller"
+            android:textSize="10sp"
+            android:textColor="@color/black_bg_color"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/find_txt_vechile_price2"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="75.2万"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</LinearLayout>

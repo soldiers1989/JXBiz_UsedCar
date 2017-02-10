@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_main"
+    tools:context=".MeTestActivity">
+
+    <include layout="@layout/me_titlebar_default" />
+
+    <ScrollView
+        android:id="@+id/me_sv_scroll"
+        style="@style/layout_full_all"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/layout_main"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <RelativeLayout
+                style="@style/layout_full_width"
+                android:layout_height="180dp"
+                android:background="@color/black_gray_bg">
+
+                <com.etong.android.frame.widget.CircleImageView
+                    android:id="@+id/me_img_compile_head"
+                    android:layout_width="69.0dp"
+                    android:layout_height="69.0dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_me_head_boy" />
+
+
+                <TextView
+                    android:id="@+id/me_txt_compile_headname"
+                    style="@style/text_large"
+                    android:textSize="18sp"
+                    android:layout_below="@id/me_img_compile_head"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="11dp"
+                    android:text="上传头像"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginTop="10dip" />
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/me_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/me_phone_number" />
+
+                <EditText
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/me_phone_number"
+                    android:id="@+id/me_edt_compile_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:inputType="phone|number"
+                    android:maxLength="11"
+                    android:hint=" 手机号"
+                    android:textColor="#979797"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "*必填"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="#ff0000"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="20dp" />
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/me_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/me_name" />
+
+                <EditText
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/me_name"
+                    android:id="@+id/me_edt_compile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="姓名"
+                    android:maxLength="8"
+                    android:inputType="textPersonName"
+                    android:textColor="#979797"
+                    android:textSize="16sp" />
+
+              <!--  <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "*必填"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="#ff0000"/>-->
+            </RelativeLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/me_idcard" />
+
+                <EditText
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/me_edt_compile_idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:maxLength="18"
+                    android:hint="身份证号码"
+                    android:textColor="#979797"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@mipmap/me_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "性别"
+                    android:drawablePadding="16dp"
+                    android:textSize="16sp"
+                    android:textColor="#979797"/>
+
+                <RadioGroup
+                    android:layout_marginLeft="70dp"
+                    style="@style/radio_group" >
+
+                    <RadioButton
+                        android:id="@+id/me_compile_sex_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/me_radiobutton_selector"
+                        android:checked="true"
+                        android:text="男"
+                        android:padding="10dp"
+                        android:textColor="#757575"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:padding="10dp"
+                        android:id="@+id/me_compile_sex_girl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="43dp"
+                        android:button="@drawable/me_radiobutton_selector"
+                        android:text="女"
+                        android:textColor="#757575"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:drawableLeft="@mipmap/me_marital_status"
+                    android:drawablePadding="16dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "婚否"
+                    android:textSize="16sp"
+                    android:textColor="#979797"/>
+
+                <RadioGroup
+                    android:layout_marginLeft="70dp"
+                    style="@style/radio_group" >
+
+                    <RadioButton
+                        android:id="@+id/me_compile_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/me_radiobutton_selector"
+                        android:checked="true"
+                        android:text="未婚"
+                        android:padding="10dp"
+                        android:textColor="#757575"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:padding="10dp"
+                        android:id="@+id/me_compile_married"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:button="@drawable/me_radiobutton_selector"
+                        android:text="已婚"
+                        android:textColor="#757575"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:background="@drawable/me_default_corner_button_selector"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="保存"
+                android:id="@+id/me_btn_put_save"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+<!--            <LinearLayout
+                android:id="@+id/fours_mycar_rl_mycar_btns"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/me_btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="47.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/me_default_corner_button_selector"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/me_btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="47.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/me_close_corner_button_selector"
+                    android:text="关闭"
+                    android:textColor="@color/blue_btn_color"
+                    android:textSize="15sp" />
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

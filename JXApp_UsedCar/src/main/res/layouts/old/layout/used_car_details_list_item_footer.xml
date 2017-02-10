@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EEEFF4" />
+
+    <TextView
+        android:id="@+id/used_car_details_parameter"
+        style="@style/MatchWrap"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:drawablePadding="8dp"
+        android:drawableRight="@mipmap/used_car_back_gray"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="标准参数配置"
+        android:textColor="@color/used_car_10a6e2"
+        android:textSize="14sp" />
+
+</LinearLayout>

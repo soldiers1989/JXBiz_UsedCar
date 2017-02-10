@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/used_car_default_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="弘高车世界质量检测报告"
+            android:textColor="@color/used_car_4a4a4a"
+            android:textSize="15sp" />
+
+        <View style="@style/divider" />
+
+        <RadioGroup
+            android:id="@+id/used_car_radio_group"
+            style="@style/radio_group"
+            android:layout_height="35dp"
+            >
+
+            <RadioButton
+                android:id="@+id/used_car_brief"
+                style="@style/uc_radio_bottom1"
+                android:layout_height="35dp"
+                android:checked="true"
+                android:textSize="14sp"
+                android:textColor="@color/used_car_title_text_color"
+                android:text="简要结论" />
+
+            <RadioButton
+                android:id="@+id/used_car_detailedness"
+                style="@style/uc_radio_bottom1"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:textColor="@color/used_car_title_text_color"
+                android:text="详细内容" />
+
+        </RadioGroup>
+        <View style="@style/divider"/>
+
+        <FrameLayout
+            android:id="@+id/used_car_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="弘高车世界服务承诺"
+            android:textColor="@color/used_car_4a4a4a"
+            android:textSize="15sp" />
+
+        <View style="@style/divider" />
+
+        <TextView
+            android:id="@+id/used_car_service_promise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/used_car_4a4a4a"
+            android:textSize="15sp"
+            android:text=""
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>

@@ -1,0 +1,15 @@
+include ':app', ':etong_android_frame_as', ':JXApp_Me', ':JXApp_Find',
+        ':JXApp_Message', ':JXApp_More', ':JXApp_Fours', ':JXApp', ':JXApp_CarAssistant',
+        ':JXApp_UsedCar', ':JXApp_CarFinancial'
+project(':app').projectDir = new File('../app')
+project(':etong_android_frame_as').projectDir = new File('../etong_android_frame_as')
+project(':JXApp_Me').projectDir = new File('../JXApp_Me')
+project(':JXApp_Find').projectDir = new File('../JXApp_Find')
+project(':JXApp_Message').projectDir = new File('../JXApp_Message')
+project(':JXApp_More').projectDir = new File('../JXApp_More')
+project(':JXApp_Fours').projectDir = new File('../JXApp_Fours')
+project(':JXApp').projectDir = new File('../JXApp')
+project(':JXApp_CarAssistant').projectDir = new File('../JXApp_CarAssistant')
+project(':JXApp_UsedCar').projectDir = new File('../JXApp_UsedCar')
+project(':JXApp_CarFinancial').projectDir = new File('../JXApp_CarFinancial')
+

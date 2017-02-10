@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/find_car_titlebar_order_defind" />
+
+    <LinearLayout
+        android:id="@+id/fc_config_compare_content_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/find_car_carconfig_compare_title_height"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/find_car_carconfig_compare_add_content"
+                android:layout_width="@dimen/find_car_carconfig_compare_add_title_width"
+                android:layout_height="match_parent"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/find_car_config_compare_add_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/find_car_config_compare_title_add" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/find_car_carconfig_compare_add_content_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="已经选择\n12/12"
+                    android:textColor="#4a4a4a" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#cecdd4" />
+            </RelativeLayout>
+
+            <com.etong.android.jxappfours.find_car.grand.view.HVScrollView
+                android:id="@+id/cofig_compare_title_car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/config_compare_title_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </com.etong.android.jxappfours.find_car.grand.view.HVScrollView>
+        </LinearLayout>
+
+        <com.etong.android.frame.widget.pinnedlistview.PinnedSectionListView
+            android:id="@+id/pinned_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fc_config_compare_content_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/default_empty_listview" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="车辆信息暂未收录，请重新选择车辆!"
+            android:textColor="#A0A0A0"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

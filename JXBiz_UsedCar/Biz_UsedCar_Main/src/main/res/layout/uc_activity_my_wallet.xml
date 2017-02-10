@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_uc__my_wallet_axctivity"
+    style="@style/MatchMatch.Vertical"
+    tools:context="com.etong.android.jxbizusedcar.activity.UC_MyWalletActivity">
+
+    <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+    <include layout="@layout/uc_empty_listview" />
+
+</LinearLayout>

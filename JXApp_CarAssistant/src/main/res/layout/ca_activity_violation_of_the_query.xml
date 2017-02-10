@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ca_ll_violation"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/gray_bg">
+
+    <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:gravity="center">
+    <ListView
+        android:id="@+id/ca_lv_violation"
+        android:background="@color/gray_bg"
+        style="@style/MatchMatch"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+    </LinearLayout>
+
+</LinearLayout>

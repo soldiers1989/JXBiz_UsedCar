@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/find_car_btn_vechile_details_paramater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:background="@null"
+        android:text="全部车型"
+        android:drawablePadding="5dp"
+        android:textColor="@color/find_car_vechile_details_paramater_text_selector"
+        android:drawableRight="@drawable/find_car_vechile_details_basic_parameter_selector"
+        android:padding="12.5dp"/>
+
+</LinearLayout>

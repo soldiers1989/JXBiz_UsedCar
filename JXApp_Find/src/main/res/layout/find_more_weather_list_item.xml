@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".content.FindMainFragment">
+
+    <TextView
+        android:id="@+id/find_more_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/find_car_wash_color"
+        />
+
+    <TextView
+        android:id="@+id/find_more_list_details"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/car_name_color"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:text="图片展示"
+        android:textColor="#202020"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/used_car_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/default_appoint"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp"/>
+
+        <include
+            android:id="@+id/default_appoint"
+            layout="@layout/uc_content_car_detail_bottom" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

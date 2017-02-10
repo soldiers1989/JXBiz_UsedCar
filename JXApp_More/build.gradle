@@ -1,0 +1,32 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.1'
+
+    defaultConfig {
+//        applicationId "com.etong.android.jxappmore"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 9
+        versionName "0.3.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':JXApp_Fours')
+    compile project(':JXApp')
+    compile project(':etong_android_frame_as')
+    compile project(':JXApp_CarAssistant')
+    compile project(':JXApp_UsedCar')
+    compile project(':JXApp_CarFinancial')
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cf_ll_record"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/gray_bg">
+
+    <include layout="@layout/cf_titlebar" />
+
+    <TextView
+        android:id="@+id/cf_tv_text"
+        style="@style/MatchWrap"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="目前只支持如下机构,请选择确认,谢谢"
+        android:textColor="@color/color_4a4a4a"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_marginTop="50dp"
+        android:id="@+id/cf_lv_register"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:divider="@null"
+        style="@style/MatchMatch"
+        />
+
+    <include
+        layout="@layout/default_empty_listview"
+        android:visibility="gone" />
+
+</LinearLayout>

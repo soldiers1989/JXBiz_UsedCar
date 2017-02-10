@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uc_activity_vehicle_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.etong.android.jxbizusedcar.activity.UC_VehicleColorActivity">
+
+    <include layout="@layout/titlebar_otherd_feault"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/used_car_9a9a9a"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="请选择车辆颜色" />
+
+            <com.etong.android.frame.widget.EtongNoScrollGridView
+                android:id="@+id/uc_gv_vehicle_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:numColumns="3"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

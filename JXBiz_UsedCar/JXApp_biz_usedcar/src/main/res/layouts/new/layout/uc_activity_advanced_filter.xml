@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uc_activity_advanced_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.etong.android.jxappusedcar.content.UC_AdvancedFilterActivity">
+
+    <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+    <RelativeLayout
+        android:id="@+id/uc_filter_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/uc_txt_filtrate_check"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/uc_lv_filtrate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/uc_txt_filtrate_check"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/used_car_cf1c36"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/uc_filter_no_nework"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/uc_no_network"/>
+
+</LinearLayout>

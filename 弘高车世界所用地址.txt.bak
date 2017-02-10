@@ -1,0 +1,7 @@
+弘高车世界：https://222.247.51.114:1443/svn/supperApp-Android/trunk/JXBiz_UsedCar
+
+/**程序 -- 正式环境 */ = "http://test.hg-rzzl.com.cn/etong2sc-app-consumer";
+/**程序 -- 本地环境 */ = "http://192.168.10.167:8090/etong2sc-app-consumer";
+
+/**资讯 -- 正式环境 */ = "http://120.25.98.100:8080/jxapi/";
+/**资讯 -- 本地环境 */ = "http://192.168.10.169:8090/jxapi/";

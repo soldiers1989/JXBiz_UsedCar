@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapWrap">
+
+
+    <ListView
+        android:id="@+id/cf_txt_or_category_lv"
+        style="@style/MatchWrap"
+        android:padding="0.5dp"
+        android:background="@drawable/cf_order_record_category_list_background"
+        android:scrollbars="none" />
+
+</LinearLayout>

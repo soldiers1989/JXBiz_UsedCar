@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="layout_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="radio_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="radio">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="radio_bottom1" parent="radio">
+        <item name="android:background">@drawable/find_car_collect_default_radio_bottom_selector
+        </item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+    </style>
+
+    <style name="progress_horizontal_my">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/find_car_filtrate_progress_horizontal_my
+        </item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">@color/grey</item>
+        <item name="android:minHeight">4dip</item>
+        <item name="android:maxHeight">4dip</item>
+    </style>
+
+    <!-- 车贷计算器中主页文字的主题 -->
+    <style name="find_car_carloan_hometext_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/find_car_carloan_home_text</item>
+        <item name="android:textSize">18sp</item>
+        <!-- <item name="android:textSize">14sp</item> -->
+    </style>
+    <!-- 车贷计算器中结果文字的主题 -->
+    <style name="find_car_carloan_resulttext_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#28B46B</item>
+        <item name="android:textSize">16sp</item>
+        <!--  		<item name="android:textSize">22sp</item> -->
+    </style>
+    <!-- 车贷计算器中底部的主题 -->
+    <style name="find_car_carloan_bottomtext_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/find_car_carloan_reslut_text</item>
+        <item name="android:textSize">20sp</item>
+        <!--  		<item name="android:textSize">24sp</item> -->
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="find_car_carloan_buttontext_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/find_car_carloan_bottom_text</item>
+        <!-- <item name="android:textSize">22sp</item> -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 车贷计算器中通用样式 -->
+    <style name="find_car_carloan_commontext_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 品牌模块中字体的默认大小 -->
+    <style name="fc_brand_tv_default" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="fc_brand_tv_sdefault" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="fc_brand_tv_xxxdefault" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="SelectDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

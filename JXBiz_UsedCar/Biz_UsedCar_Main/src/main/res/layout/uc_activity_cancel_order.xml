@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="@color/transparent"
+    android:focusable="false"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/UC_PayMent_Style">
+
+            <ImageView
+                android:id="@+id/uc_iv_cancle"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/uc_ic_order_cancel" />
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_centerInParent="true"
+                android:text="取消原因"
+                android:textColor="@color/uc_color_3e3a39"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <View style="@style/divider"/>
+        <RadioGroup
+            style="@style/MatchWrap">
+        <RadioButton
+            android:id="@+id/uc_cancel_fill_wrong"
+            style="@style/UC_Cancel_Order_Style"
+            android:button="@null"
+            android:text="信息填写错误"/>
+        <View
+            style="@style/divider"/>
+        <RadioButton
+            android:id="@+id/uc_cancel_no_buy"
+            style="@style/UC_Cancel_Order_Style"
+            android:button="@null"
+            android:checked="true"
+            android:text="我不想买了"/>
+        <View
+            style="@style/divider"/>
+        <RadioButton
+            android:id="@+id/uc_cancel_other"
+            style="@style/UC_Cancel_Order_Style"
+            android:button="@null"
+            android:text="其他原因"/>
+        <View
+            style="@style/divider"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/uc_cancel_finish"
+            style="@style/UC_Order_Button_Style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="完 成" />
+    </LinearLayout>
+
+</LinearLayout>

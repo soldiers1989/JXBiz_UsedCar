@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.etong.android.frame.widget.pulltofresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/uc_identify_order_all_lv"
+        style="@style/MatchMatch"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderBackground="@color/white"
+        ptr:ptrShowIndicator="false" />
+
+    <LinearLayout
+        android:id="@+id/uc_identify_order_ll_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/uc_identify_order_img_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/uc_identify_order_txt_null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="亲，暂时没有内容哦"
+            android:textColor="@color/title_no_click_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

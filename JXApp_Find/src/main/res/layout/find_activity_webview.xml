@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/find_titlebar_default" />
+
+    <WebView
+
+        android:id="@+id/find_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/layout_null"
+        style="@style/layout_full_all"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/default_empty_listview" />
+
+        <TextView
+            android:id="@+id/default_empty_lv_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="请求数据失败,点击重试"
+            android:textColor="#A0A0A0"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

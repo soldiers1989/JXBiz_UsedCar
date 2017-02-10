@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/find_car_titlebar_order_defind" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDF0F5"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/find_car_activity_fc_finance_result_title" />
+
+            <include layout="@layout/find_car_activity_fc_finance_result_neck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <include layout="@layout/find_car_activity_fc_finance_result_bottom_way" />
+
+                <include layout="@layout/find_car_activity_fc_finance_result_bottom_first_pay" />
+
+                <include layout="@layout/find_car_activity_fc_finance_result_bottom_loan_year" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/find_car_carloan_resulttext_style"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/find_car_38A3E3"
+                android:text="*以上费用结果仅供参考" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

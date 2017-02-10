@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap">
+
+    <TextView
+        android:id="@+id/cf_txt_or_txt_category_tltle"
+        style="@style/MatchMatch"
+        android:background="@drawable/cf_order_record_category_item_selector"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="车贷申请"
+        android:textColor="@color/cf_order_record_category_item_textcolor_selector"
+        android:textSize="15sp" />
+</LinearLayout>

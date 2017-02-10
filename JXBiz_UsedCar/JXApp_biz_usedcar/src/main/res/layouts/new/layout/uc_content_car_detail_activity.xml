@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar_self_bg_default" />
+
+    <RelativeLayout
+        android:id="@+id/uc_content_car_detail_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <com.etong.android.frame.widget.pinnedlistview.PinnedSectionListView
+            android:id="@+id/uc_lv_car_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:divider="@null"/>
+
+        <ImageView
+            android:id="@+id/uc_iv_car_detail_scroll_to_top"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/uc_scroll_to_top"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"/>
+
+        <include layout="@layout/uc_content_car_detail_bottom" />
+
+        <ImageView
+            android:id="@+id/uc_iv_car_detail_no_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

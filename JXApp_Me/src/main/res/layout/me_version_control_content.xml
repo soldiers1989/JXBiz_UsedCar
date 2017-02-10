@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/me_setting_version_control"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/me_setting_ic_logo"/>
+
+    <TextView
+        android:id="@+id/me_setting_version_name_tv"
+        style="@style/WrapWrap"
+        android:layout_margin="10dp"
+        android:text="津湘汽车     0.3.0"
+        android:textColor="@color/grey" />
+
+    <View style="@style/divider" />
+</LinearLayout>

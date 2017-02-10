@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE2E2E2"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/find_car_carloan_result_title" />
+
+            <include layout="@layout/find_car_carloan_result_neck" />
+
+            <include layout="@layout/find_car_carloan_result_middle" />
+
+            <RelativeLayout
+                android:id="@+id/carloan_result_modlecontent"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="融资方案"
+                    android:textColor="@color/find_car_carloan_reslut_text"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/zonghe"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/default_right_enter" />
+
+                <TextView
+                    android:id="@+id/carloan_result_modle"
+                    style="@style/find_car_carloan_resulttext_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/zonghe"
+                    android:text="综合模式"
+                    android:textColor="@color/find_car_carloan_result_title" />
+            </RelativeLayout>
+
+            <include layout="@layout/find_car_carloan_result_select_top" />
+
+            <include layout="@layout/find_car_carloan_result_select_bottom" />
+
+            <TextView
+                style="@style/find_car_carloan_resulttext_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:text="*以上费用结果仅供参考" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

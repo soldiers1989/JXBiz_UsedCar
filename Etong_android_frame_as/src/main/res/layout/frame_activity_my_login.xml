@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_main">
+
+    <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+
+    <LinearLayout
+        android:id="@+id/frame_ll_login"
+        style="@style/layout_main">
+
+        <View
+            style="@style/divider"
+            android:layout_marginTop="10dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/frame_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/frame_phone_number" />
+
+            <EditText
+                android:id="@+id/frame_edt_put_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/frame_phone_number"
+                android:background="@color/transparent"
+                android:digits="1234567890"
+                android:hint=" 请输入手机号"
+                android:inputType="phone|number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="#979797"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divider"
+            android:layout_marginLeft="20dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/frame_verification_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/frame_verification_code" />
+
+            <EditText
+                android:layout_toLeftOf="@+id/frame_btn_verification_code"
+                android:id="@+id/frame_edt_put_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/frame_verification_code"
+                android:background="@color/transparent"
+                android:hint="请输入手机验证码"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#979797"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/frame_btn_verification_code"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/frame_verification_button_background"
+                android:text="获取验证码"
+                android:textColor="#10a6e2"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View style="@style/divider" />
+
+
+        <Button
+            android:id="@+id/frame_btn_put_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@drawable/frame_default_corner_button_selector"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/frame_login_failed_layout"
+        android:visibility="gone" />
+
+</LinearLayout>

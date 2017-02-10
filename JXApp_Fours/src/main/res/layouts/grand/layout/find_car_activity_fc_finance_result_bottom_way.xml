@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fc_finance_result_bottom_way_vp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="融资方案"
+        android:textColor="@color/find_car_carloan_reslut_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/fc_finance_result_bottom_way_txt"
+        style="@style/find_car_carloan_resulttext_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:drawableRight="@drawable/default_right_enter"
+        android:gravity="center"
+        android:text="综合模式"
+        android:textColor="@color/find_car_38A3E3" />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/used_car_default_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/used_car_titlebar_order_defind" />
+
+
+    <TextView
+        android:id="@+id/used_car_select_detail_title"
+        style="@style/used_car_text_defalt"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="亲，请在选择爱车后将车辆信息补充完整，并点击提交，即可完成预约申请哦~"
+        android:textColor="@color/used_car_10a6e2"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/used_car_ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/used_car_select_carnumber_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

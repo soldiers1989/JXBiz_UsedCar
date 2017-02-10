@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/find_car_carset_detail_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/find_car_carset_item_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:text="2016款Sportback 35 TFSI 进取型"
+            android:textColor="#222222"
+            style="@style/fc_brand_tv_default"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/fc_brand_tv_sdefault"
+                    android:text="厂商指导价：  "
+                    android:textColor="#4a4a4a"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/find_car_carset_tv_guid_price"
+                    android:text="18.49万"
+                    android:textColor="#4a4a4a"
+                    style="@style/fc_brand_tv_sdefault" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    style="@style/fc_brand_tv_sdefault"
+                    android:text="参考价："
+                    android:textColor="#10a6e2" />
+
+                <TextView
+                    android:id="@+id/find_car_carset_tv_reference_price"
+                    style="@style/fc_brand_tv_xxxdefault"
+                    android:text="16.09万起"
+                    android:textColor="#fd513c"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEFF" />
+    </LinearLayout>
+
+    <include layout="@layout/find_car_detail_list_item_bottom_btn" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/start_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/gray_bg"
+        style="@style/MatchMatch">
+    <com.etong.android.frame.widget.pulltofresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/me_lv_newcar"
+        style="@style/MatchMatch"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="disabled"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderBackground="@color/white"
+        ptr:ptrShowIndicator="false" />
+
+    <include
+        layout="@layout/default_empty_listview"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

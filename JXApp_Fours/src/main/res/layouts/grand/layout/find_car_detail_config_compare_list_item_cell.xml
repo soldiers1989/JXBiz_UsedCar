@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/fc_detail_config_compare_list_item_content"
+        android:layout_width="@dimen/find_car_carconfig_compare_title_width"
+        android:layout_height="@dimen/find_car_carconfig_compare_item_height">
+
+        <TextView
+            android:id="@+id/fc_detail_config_compare_list_item_cell_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="16.09万起"
+            android:textColor="#4a4a4a"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ceccd4" />
+    </RelativeLayout>
+</LinearLayout>

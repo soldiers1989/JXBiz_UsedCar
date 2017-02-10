@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+<LinearLayout
+    android:id="@+id/used_car_ll_tag_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/used_car_tag_bg">
+    <!---->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/used_car_tv_reset"
+        android:textColor="@color/used_car_666666"
+        android:textSize="13sp"
+        android:text="阿斯顿马丁"
+        android:gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawablePadding="5dp"
+        />
+
+   <!-- -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/used_car_iv_cancel"
+        android:src="@mipmap/used_car_cancel_img"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/used_car_tv_select_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:text="选择车系"
+        android:textSize="13sp"
+        android:textColor="@color/used_car_666666"
+        android:drawableLeft="@mipmap/used_car_select_cars_img"
+        android:drawablePadding="3dp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/used_car_ll_tag_item_carset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/used_car_tag_bg"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/used_car_tv_reset_carset"
+            android:textColor="@color/used_car_666666"
+            android:textSize="13sp"
+            android:text="阿斯顿马丁"
+            android:gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawablePadding="5dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/used_car_iv_cancel_carset"
+            android:src="@mipmap/used_car_cancel_img"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

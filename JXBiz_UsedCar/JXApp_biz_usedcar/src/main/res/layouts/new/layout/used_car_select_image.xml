@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/used_car_rl_add_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/used_car_select_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:overScrollMode="never" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/default_appoint"
+            android:layout_marginBottom="30dp">
+
+            <include
+                android:id="@+id/default_appoint"
+                layout="@layout/used_car_select_image_titlebar_otherd" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/default_appoint"
+            layout="@layout/uc_content_car_detail_bottom" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_car_data_item_content_background_selector"
+        android:orientation="horizontal" 
+        android:padding="10dp">
+
+        <TextView 
+            android:id="@+id/tv_content"
+            style="@style/layout"
+            android:text="30%"
+            android:textSize="20sp"
+            android:textColor="@drawable/find_car_item_color_selector"
+            />
+<!--             android:textColor="@drawable/item_color_selector" -->
+        
+    </LinearLayout>
+        <View style="@style/divider" />
+
+</LinearLayout>

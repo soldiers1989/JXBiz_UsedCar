@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ca_vq_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeff4">
+
+    <LinearLayout
+        android:id="@+id/ca_vq_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeff4"
+        android:orientation="vertical">
+
+        <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+        <ScrollView
+            android:id="@+id/ca_vq_sv_scroll"
+            style="@style/layout_full_all"
+            android:scrollbars="none">
+
+            <LinearLayout
+                style="@style/layout_main"
+                android:background="#eeeff4"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/ca_vq_txt_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="亲，请在选择爱车后将车辆信息补充完整，并点击开始查询，即可完成违章查询哦~"
+                    android:textColor="#10a6e2"
+                    android:textSize="15sp" />
+
+
+                <View
+                    style="@style/divider"
+                    android:layout_marginTop="5dip" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/ca_vq_txt_city_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical"
+                        android:text="查询城市:"
+                        android:textColor="#4a4a4a"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/ca_vq_edt_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/ca_vq_img"
+                        android:layout_toRightOf="@+id/ca_vq_txt_city_title"
+                        android:background="@color/transparent"
+                        android:text="湖南"
+                        android:textColor="#979797"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/ca_vq_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@mipmap/fours_mycar_next"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/divider"
+                    android:layout_marginLeft="10dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:text="号牌类型:"
+                        android:textColor="#4a4a4a"
+                        android:textSize="14sp" />
+
+                    <RadioGroup style="@style/radio_group">
+
+                        <RadioButton
+                            android:id="@+id/ca_vq_rb_small_car"
+                            android:layout_width="46dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/ca_defind_corner_button_select"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="小车"
+                            android:textColor="@drawable/detail_bottom_text_color"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/ca_vq_rb_big_car"
+                            android:layout_width="46dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ca_defind_corner_button_select"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="大车"
+                            android:textColor="@drawable/detail_bottom_text_color"
+                            android:textSize="12sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/divider"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:text="车 牌 号:"
+                        android:textColor="#4a4a4a"
+                        android:textSize="14sp" />
+
+
+                    <Button
+                        android:id="@+id/ca_vq_btn_type"
+                        android:layout_width="45dp"
+                        android:layout_height="24dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/find_car_radiobutton_backgroud_selector"
+                        android:drawableRight="@mipmap/fours_mycar_pull_down"
+                        android:paddingRight="8dp"
+                        android:text="湘"
+                        android:textColor="@color/select_blue"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/ca_vq_edt_plate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:capitalize="characters"
+                        android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                        android:hint="车牌号"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="#979797"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/divider"
+                    android:layout_marginLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="13dp"
+                        android:text="发动机号:"
+                        android:textColor="#4a4a4a"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ca_vq_edt_engine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:digits="0123456789"
+                        android:hint="发动机后6位"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="#979797"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/divider"
+                    android:layout_marginLeft="10dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:text="车 架 号:"
+                        android:textColor="#4a4a4a"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ca_vq_edt_chassis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                        android:hint="完整车架号"
+                        android:maxLength="17"
+                        android:singleLine="true"
+                        android:textColor="#979797"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/ca_vq_btn_commit"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fours_mycar_default_corner_button_selector"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/ca_vq_framlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="right" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cf_activity_first_complete_info"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/gray_bg"
+    tools:context="com.etong.android.jxappcarfinancial.activity.CF_FirstBindingInfoActivity">
+
+
+    <include layout="@layout/cf_titlebar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="请完善金融机构要求提交基本的信息，谢谢！"
+        android:textColor="#4a4a4a"
+        android:textSize="15sp" />
+
+    <include layout="@layout/cf_input_information_view" />
+
+
+    <LinearLayout
+        android:id="@+id/cf_ll_choice_btns"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:paddingLeft="27.5dp"
+        android:paddingRight="27.5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cf_btn_input_save"
+            style="@style/CF_FirstCompleteInfoBtn"
+            android:background="@drawable/frame_default_corner_button_selector"
+            android:text="保存"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/cf_btn_input_cancel"
+            style="@style/CF_FirstCompleteInfoBtn"
+            android:background="@drawable/cf_cancel_button_selector"
+            android:text="取消"
+            android:textColor="#10a6e2" />
+    </LinearLayout>
+</LinearLayout>

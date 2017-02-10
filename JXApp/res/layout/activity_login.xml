@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_main"
+    android:id="@+id/ll_login" >
+
+    <LinearLayout
+        style="@style/layout_both12"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:layout_marginTop="50dip" >
+	
+            <EditText
+                android:id="@+id/login_phone"
+                style="@style/textarea_single"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:hint="请输入手机号码"
+                android:background="@drawable/edit_text_background"
+                android:maxLength="11"
+                android:inputType="phone" />
+	
+
+       <!--  <View style="@style/divider" /> -->
+        
+        
+		<LinearLayout
+            style="@style/layout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_background"
+             android:layout_marginTop="10dip" >
+
+        <EditText
+            android:id="@+id/login_passwd"
+            style="@style/textarea_single"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:paddingLeft="15dp"
+            android:hint="请输入验证码"
+            android:inputType="textVisiblePassword"/>
+
+     		<View
+     		    style="@style/divider_vertical"
+     		     />
+            <Button
+                android:id="@+id/login_vcode"
+                style="@style/button_smaller"
+                android:background="@color/transparent"
+                android:textColor="@color/button_code_color"
+                android:layout_width="100dip" />
+        </LinearLayout>
+        
+		  <!--  
+        <EditText
+            android:id="@+id/login_passwd"
+            style="@style/textarea_single"
+            android:drawableLeft="@drawable/user_password"
+            android:hint="验证码"
+            android:inputType="textVisiblePassword" />-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_submit"
+        style="@style/button_block"
+        android:layout_marginTop="35dip"
+        android:text="登录" />
+
+    
+
+</LinearLayout>

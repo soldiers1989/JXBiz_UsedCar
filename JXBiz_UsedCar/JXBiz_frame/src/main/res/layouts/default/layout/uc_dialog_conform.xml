@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uc_c_ll_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/uc_c_tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/uc_rectangle_top_round_all_white"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:text="感谢"
+        android:textStyle="bold"
+        android:textColor="#2a2a2a"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/uc_c_iv_cancel"
+        android:padding="10dp"
+        android:src="@drawable/uc_dialog_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_below="@+id/uc_c_tv_dialog_title"
+        android:id="@+id/uc_c_tv_dialog_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingRight="23dp"
+        android:paddingLeft="23dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="24dp"
+        android:lineSpacingExtra="6dp"
+        android:text="您的看车信息已提交，工作人员将马上与您取得联系，请确保您的联系方式可用！"
+        android:textColor="#2a2a2a"
+        android:textSize="15sp" />
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/uc_c_tv_dialog_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:background="@drawable/uc_rectangle_bottom_round_all_white"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/uc_c_btn_conform"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/uc_bg_button_conform"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

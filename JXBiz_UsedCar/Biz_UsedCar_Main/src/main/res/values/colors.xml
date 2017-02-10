@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="uc_text_red">#cf1c36</color>
+    <color name="uc_text_normal">#8a8a8a</color>
+
+    <color name="uc_tabhost_text_normal">#8e8e8e</color>
+
+    <color name="uc_gray_easy">#efefef</color>
+    <color name="uc_black_quite">#2a2a2a</color>
+    <color name="uc_gray_quite">#9a9a9a</color>
+    <color name="uc_gray_driver">#e6e6e6</color>
+    <color name="uc_navy">#45ada5</color>
+    <color name="uc_second_red">#cf1c36</color>
+    <color name="uc_second_red_translte">#7Fcf1c36</color>
+    <color name="uc_gray_salty">#dddddd</color>
+    <color name="uc_gray_bolder">#dbdbdb</color>
+    <color name="uc_second_blue">#1d89fe</color>
+    <color name="uc_black_1">#4a4a4a</color>
+    <color name="uc_3e3a39">#3e3a39</color>
+    <color name="uc_c9caca">#c9caca</color>
+    <color name="uc_898989">#898989</color>
+    <color name="uc_ffa13f">#ffa13f</color>
+    <color name="uc_33cc73">#33cc73</color>
+
+
+    <color name="uc_color_3e3a39">#3e3a39</color>
+    <color name="uc_color_898989">#898989</color>
+    <color name="uc_color_b3b3b3">#b3b3b3</color>
+    <color name="uc_color_cccccc">#cccccc</color>
+
+
+
+    <color name="used_car_c5c5c5">#C5C5C5</color>
+</resources>

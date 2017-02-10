@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cf_ll_record_head"
+    style="@style/MatchWrap.Vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:divider="@drawable/horizon_divider"
+    android:showDividers="end"
+    android:visibility="gone"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/CF_Record"
+            android:layout_weight="0.5"
+            android:text="序号" />
+
+        <TextView
+            style="@style/CF_Record"
+            android:text="订单编号" />
+
+        <TextView
+            style="@style/CF_Record"
+            android:text="创建时间" />
+
+        <TextView
+            style="@style/CF_Record"
+            android:text="订单分类" />
+
+        <TextView
+            android:id="@+id/cf_txt_head_title"
+            style="@style/CF_Record"
+            android:layout_weight="1"
+            android:text="状态" />
+    </LinearLayout>
+</LinearLayout>

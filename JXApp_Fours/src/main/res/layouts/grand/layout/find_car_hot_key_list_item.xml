@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/hot_key_img_pic"
+        style="@style/image_logo2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/hot_key_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="smart fortwo"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="#4a4a4a"/>
+
+        <TextView
+            android:id="@+id/hot_key_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.98 - 24.98万"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:textColor="#fd513c"/>
+    </LinearLayout>
+
+</LinearLayout>

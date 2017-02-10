@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout_login_failed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:paddingRight="75dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frame_login_failed"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#979797"
+        android:layout_marginTop="60dp"
+        android:text="我已经用了洪荒之力，可还是失败了......"/>
+
+    <TextView
+        android:id="@+id/frame_txt_login_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#f59a23"
+        android:layout_marginTop="26dp"
+        android:text="继续登录"/>
+
+    <TextView
+        android:id="@+id/frame_txt_giveup_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#10a6e2"
+        android:layout_marginTop="26dp"
+        android:text="先到处逛逛吧，稍后再说~"/>
+
+
+
+</LinearLayout>

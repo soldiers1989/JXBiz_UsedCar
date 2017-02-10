@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cf_ll_record_head"
+    style="@style/MatchWrap.Vertical"
+    android:background="@color/gray_bg">
+
+    <TextView
+       style="@style/CA_Violation"
+        android:text=""
+        android:id="@+id/ca_tv_violation"/>
+   <!-- android:lineSpacingExtra="10dp"-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        style="@style/MatchWrap.Horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/CF_Record"
+            android:layout_weight="0.5"
+            android:text="序号" />
+
+        <TextView
+            style="@style/CF_Record"
+            android:layout_weight="1.5"
+            android:text="违法行为" />
+
+        <TextView
+            style="@style/CF_Record"
+            android:layout_weight="0.5"
+            android:text="记分" />
+
+        <TextView
+            style="@style/CF_Record"
+            android:layout_weight="0.5"
+            android:text="罚款" />
+
+        <!--<TextView
+            style="@style/CF_Record"
+            android:text="状态" />-->
+
+        <TextView
+            style="@style/CF_Record"
+            android:layout_weight="0.5"
+            android:text="操作" />
+
+    </LinearLayout>
+</LinearLayout>

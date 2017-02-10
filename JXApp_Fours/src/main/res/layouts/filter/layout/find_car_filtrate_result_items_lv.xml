@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/find_car_filtrate_rl_title"
+        style="@style/layout"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/gray_bg"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/find_car_filtrate_txt_vechile_series_zero"
+            style="@style/text_block"
+            android:text="一汽奥迪"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/find_car_filtrate_txt_reset"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#10A6E2"
+            android:text="重置条件"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/find_car_filtrate_rl_vechile_series_item"
+        style="@style/layout_menu2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/find_car_filtrate_img_vechile_series_logo"
+            android:layout_width="80dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            style="@style/layout"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/find_car_filtrate_img_vechile_series_logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/find_car_filtrate_txt_vechile_series_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="奥迪"
+                android:textColor="#4a4a4a"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/find_car_filtrate_txt_vechile_series_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:text="18.49-29.67万"
+                android:textColor="#fd513c" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

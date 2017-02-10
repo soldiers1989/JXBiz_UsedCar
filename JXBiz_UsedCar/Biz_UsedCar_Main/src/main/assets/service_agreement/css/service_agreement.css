@@ -1,0 +1,24 @@
+.container_box{
+    padding:0.47rem;
+}
+.container_box h1{
+    font-size:0.5rem ;
+    color:#2a2a2a;
+    padding-bottom:0.3rem;
+    border-bottom: 1px solid #ddd;
+}
+.service{
+    margin-top:0.6rem;
+}
+.service_agreement h2,.service h2{
+    font-size:0.5rem ;
+    text-align: center;
+    color:#2a2a2a;
+    margin-top:0.3rem;
+    margin-bottom:0.3rem;
+}
+.service_agreement li,.service p{
+    line-height: 0.62rem;
+    font-size:0.41rem;
+    color:#2a2a2a;
+}

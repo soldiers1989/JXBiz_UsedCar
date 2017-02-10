@@ -1,0 +1,107 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="layout_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="textarea_single" parent="text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:paddingLeft">14dip</item>
+        <item name="android:paddingRight">4dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/edit_text_color</item>
+        <item name="android:textColorHint">@color/edit_hint_color</item>
+        <!-- <item name="android:drawableLeft">@drawable/default_input_left</item> -->
+        <item name="android:background">@color/transparent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_left12" parent="layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">6dip</item>
+        <item name="android:paddingBottom">6dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">12dip</item>
+    </style>
+
+    <style name="divider_vertical">
+        <item name="android:layout_width">0.3dip</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:background">@color/border_other_color</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/login_text_color</item>
+        <item name="android:background">@drawable/default_corner_button_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_block" parent="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">12dip</item>
+        <item name="android:layout_marginRight">12dip</item>
+        <item name="android:layout_height">45dip</item>
+    </style>
+
+    <style name="button_code">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="button_smaller" parent="button_code">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">获取验证码</item>
+        <item name="android:padding">5.0dip</item>
+    </style>
+
+    <style name="pop_text_style">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

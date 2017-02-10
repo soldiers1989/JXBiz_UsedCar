@@ -1,0 +1,21 @@
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    
+
+        android:id="@+id/button0"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+       	android:layout_weight="1"
+        android:button="@null"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp" 
+        android:background="@drawable/data_item_title_left_selector"
+        android:gravity="center"
+        android:textColor="@color/checkbox_text_color" >
+
+</RadioButton>
+ <!-- 
+       	android:checked="true"
+        android:background="@drawable/data_item_radiobutton_background" -->

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/uc_filter_txt_rangesb_title"
+            android:textColor="@color/used_car_2a2a2a"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车龄"/>
+
+        <TextView
+            android:id="@+id/uc_filter_txt_rangesb_unit"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/uc_filter_txt_rangesb_title"
+            android:textColor="@color/used_car_9a9a9a"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(单位:年)"/>
+
+
+        <TextView
+            android:id="@+id/uc_filter_txt_rangesb"
+            android:textColor="@color/used_car_2a2a2a"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8年以下"/>
+
+    </RelativeLayout>
+
+    <com.etong.android.jxappusedcar.utils.UC_AdvancedFilter_RangeSeekBar
+        android:id="@+id/uc_filter_seekbar_rangesb"
+        xmlns:seekbar="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        seekbar:leftCursorBackground="@mipmap/uc_rangeseekbar_btn"
+        seekbar:rightCursorBackground="@mipmap/uc_rangeseekbar_btn"
+        seekbar:spaceBetween="10dp"
+        seekbar:seekbarHeight="4.5dp"
+        seekbar:textColorNormal="#a0a0a0"
+        seekbar:textColorSelected="#a0a0a0"
+        seekbar:seekbarColorNormal="#d2d2d2"
+        seekbar:seekbarColorSelected="@color/used_car_cf1c36"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        seekbar:textSize="13dp" />
+
+
+    <View style="@style/divider"
+        android:layout_marginLeft="8dp"></View>
+</LinearLayout>

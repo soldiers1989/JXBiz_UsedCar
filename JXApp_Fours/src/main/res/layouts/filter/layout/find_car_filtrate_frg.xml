@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/find_car_filtrate_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--主内容布局 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/find_car_sv_scroll"
+            style="@style/layout_full_all"
+            android:layout_above="@+id/find_car_ll"
+            android:layout_alignParentTop="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                style="@style/layout_main"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@color/gray_bg"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:text="价格"
+                        android:textSize="16sp" />
+
+                    <com.etong.android.jxappfours.find_car.filtrate.utils.Find_Car_Filtrate_RangeSeekBar
+                        android:id="@+id/find_car_sb_price"
+                        style="@style/progress_horizontal_my"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:text="级别"
+                    android:textSize="16sp" />
+
+                <com.etong.android.frame.widget.EtongLineNoScrollGridView
+                    android:id="@+id/find_car_gv_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:numColumns="3"
+                    android:scrollbars="none" />
+
+                <com.etong.android.frame.widget.EtongNoScrollListView
+                    android:id="@+id/find_car_lv_others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/find_car_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/find_car_btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+
+                android:drawableTop="@mipmap/find_car_reset"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="重置"
+                android:textColor="@color/select_blue"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/find_car_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+
+                android:drawableTop="@mipmap/find_car_cancel"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="取消"
+                android:textColor="@color/select_blue"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/find_car_btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/select_blue"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--侧滑布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginRight="-65dp"
+        android:clickable="true"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:id="@+id/find_car_filtrate_framlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="right" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

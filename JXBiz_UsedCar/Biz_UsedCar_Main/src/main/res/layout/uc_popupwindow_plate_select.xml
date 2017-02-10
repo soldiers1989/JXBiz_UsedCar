@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d9dee1"
+    android:orientation="vertical" >
+
+    <GridView
+        android:background="#d9dee1"
+        android:id="@+id/uc_gv_plate_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:numColumns="9"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="7dip"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        ></GridView>
+
+</LinearLayout>

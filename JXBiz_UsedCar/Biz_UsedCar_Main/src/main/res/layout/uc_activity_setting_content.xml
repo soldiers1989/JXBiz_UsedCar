@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/layout_main"
+        android:background="@color/white"
+        android:divider="@drawable/horizon_divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <include layout="@layout/default_titlebar_whiteback_blackchart" />
+
+        <TextView
+            android:id="@+id/uc_ll_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/uc_ic_arrow_right"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:text="关于我们"
+            android:textColor="@color/uc_black_quite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/uc_ll_detect_updates"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/uc_ic_arrow_right"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:text="检测更新"
+            android:textColor="@color/uc_black_quite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/uc_ll_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/uc_ic_arrow_right"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:text="清除缓存"
+            android:textColor="@color/uc_black_quite"
+            android:textSize="14sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/me_rl_open_location"
+            style="@style/MatchWrap"
+            android:layout_marginLeft="15dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_smaller"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="开启定位"
+                android:textColor="@color/used_car_4a4a4a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/me_txt_is_open_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:textColor="@color/used_car_4a4a4a"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/uc_gray_driver" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/uc_login_off"
+        style="@style/button_block"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/uc_bg_button_conform"
+        android:text="退出登录" />
+</RelativeLayout>

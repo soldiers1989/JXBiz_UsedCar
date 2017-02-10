@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.1'
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 9
+        versionName "0.3.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+    // 支持包
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    // 第三方包
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    // recyclerview
+    compile 'com.lzy.net:okhttputils:1.8.1'
+    // 网络请求封装库
+    compile 'com.lzy.net:okhttpserver:1.0.3'
+    compile 'com.orhanobut:logger:1.15'
+    // 打印日志库
+    compile 'com.jakewharton:butterknife:8.2.1'
+    // butterknife
+    compile 'com.github.stuxuhai:jpinyin:1.1.7'
+    // pinyin
+    compile 'com.pgyersdk:sdk:2.4.5'
+    // 蒲公英自动更新
+    compile 'com.alibaba:fastjson:1.2.21'
+    // fastJson
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    // volley
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.robolectric:robolectric:3.1.4'
+    testCompile 'org.robolectric:robolectric-annotations:3.1.4'
+    //robolectric针对support-v4的shadows
+    testCompile 'org.robolectric:shadows-support-v4:3.1.4'
+    //添加多包支持
+    testCompile 'org.robolectric:shadows-multidex:3.1.4'
+    //http
+    testCompile 'org.robolectric:shadows-httpclient:3.1.4'
+    //map
+    testCompile 'org.robolectric:shadows-maps:3.1.4'
+}

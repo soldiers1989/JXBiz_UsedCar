@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:background="@color/white"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/uc_message_img_pic"
+        style="@style/image_logo2" />
+
+    <RelativeLayout
+        style="@style/layout_full_all"
+        android:paddingLeft="8dip"
+         >
+        <!--android:paddingRight="4dip"-->
+        <TextView
+            android:id="@+id/uc_message_txt_title"
+            android:paddingTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"
+            android:text="兰博基尼首秀发挥大发和更好的发挥风格和地方和法国和发挥的发挥发挥"
+
+            android:textStyle="bold" />
+      <!--  gravity="top|left"style="@style/title_smaller"-->
+        <TextView
+            android:id="@+id/uc_message_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="@color/time_color"
+            android:text="2014.8.27"
+             />
+      <!--  style="@style/text_smaller"-->
+
+
+    </RelativeLayout>
+
+</LinearLayout>

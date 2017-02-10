@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".content.FindMainFragment">
+
+    <include layout="@layout/find_titlebar_default" />
+
+
+
+    <com.etong.android.frame.widget.pulltofresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/find_sv_scroll"
+        style="@style/layout_full_all"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="visible"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderBackground="@color/white">
+
+        <LinearLayout
+            android:id="@+id/find_ll_linear"
+            style="@style/layout_main"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/find_weather"
+                layout="@layout/find_main_weather"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/find_oil_price"
+                layout="@layout/find_main_oil_price"
+                android:visibility="gone" />
+
+            <!--<com.etong.android.frame.widget.nestedscrollview.IScrollView
+                android:id="@+id/find_sv_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">-->
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/find_vp_pic_slide"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    android:overScrollMode="never"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/find_ll_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="8dp"></LinearLayout>
+            </LinearLayout>
+            <!-- <View
+                    style="@style/divider"/>-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray_bg"></View>
+
+            <LinearLayout
+
+                android:id="@+id/find_ll_time_limited_buy"
+                style="@style/layout_left12"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="14dp">
+
+                <View
+                    style="@style/divider_vertical"
+                    android:layout_width="5dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:background="@color/blue_color" />
+
+                <TextView
+                    android:id="@+id/find_txt_time_limited_buy_title"
+                    style="@style/text"
+                    android:layout_marginLeft="3dp"
+                    android:text="限时购"
+                    android:textColor="@color/black" />
+                <!-- -->
+
+                <LinearLayout
+                    android:id="@+id/find_ll_distance_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/find_txt_distance_time"
+                        style="@style/text_bold"
+                        android:layout_above="@+id/find_countdown_time"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="9dp"
+                        android:text="距离开始"
+                        android:textColor="@color/text_color"
+                        android:textSize="13sp" />
+
+                    <com.etong.android.jxappfind.utils.FindCountDownViews
+                        android:id="@+id/find_countdown_time"
+                        style="@style/layout"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+                <!-- -->
+                <TextView
+                    android:id="@+id/find_txt_time_limited_buy_more"
+                    style="@style/text"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/find_more_ic"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/blue_color"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/find_rl_time_limited_buy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <!--  android:layout_marginBottom="10dp"-->
+                <LinearLayout
+                    android:id="@+id/find_ll_time_limited_buy_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/find_ll_time_limited_buy_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/find_ll_time_limited_buy_page"
+                    android:background="@color/white"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/find_ll_sales_car"
+                style="@style/layout_left12"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="14dp">
+
+                <View
+                    style="@style/divider_vertical"
+                    android:layout_width="5dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:background="@color/blue_color" />
+
+                <TextView
+                    android:id="@+id/find_txt_sales_car_title"
+                    style="@style/text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="促销车"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/find_txt_sales_car_more"
+                    style="@style/text"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/find_more_ic"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/blue_color"
+                    android:textSize="14.5sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/find_rl_sales_car"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/find_ll_sales_car_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/find_ll_sales_car_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/find_ll_sales_car_page"
+                    android:background="@color/white"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"></LinearLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray_bg"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+
+                android:orientation="vertical"
+                android:paddingLeft="12dip"
+
+                android:paddingRight="12dip">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        style="@style/divider_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:background="@color/blue_color" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="猜你喜欢"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/find_txt_like_more"
+                        style="@style/text"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/find_more_ic"
+                        android:gravity="right"
+                        android:text="更多"
+                        android:textColor="@color/blue_color"
+                        android:textSize="14.5sp" />
+
+
+                </LinearLayout>
+
+
+                <com.etong.android.jxappfind.utils.FindNoScrollListView
+                    android:id="@+id/find_lv_guess_like_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:scrollbars="none">
+
+                </com.etong.android.jxappfind.utils.FindNoScrollListView>
+
+
+            </LinearLayout>
+            <!--           </LinearLayout>
+                   </com.etong.android.frame.widget.nestedscrollview.IScrollView>-->
+        </LinearLayout>
+    </com.etong.android.frame.widget.pulltofresh.PullToRefreshScrollView>
+
+</LinearLayout>

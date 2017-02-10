@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+
+    <TextView
+        android:id="@+id/more_txt_listtitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:textSize="14dp"
+        android:textColor="#6a6a6a"
+        android:text="4S店"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <com.etong.android.jxappmore.widget.MoreViewPager
+            android:overScrollMode="never"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/more_vp_content"
+            android:scrollbars="none">
+        </com.etong.android.jxappmore.widget.MoreViewPager>
+
+        <LinearLayout
+            android:id="@+id/more_ll_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

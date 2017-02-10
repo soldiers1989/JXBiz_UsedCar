@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <style>
+    html,body { height:100%; width:100%;margin:0;background:white;  padding:0;align:left;valign:left;}
+    </style>
+</head>
+<body>
+   <!-- <div id="main" style="height:50%;width:95%;border:0px;align:center"></div>
+     ECharts单文件引入 -->
+   	<script src="./echart/js/echarts.min.js"></script>
+    <script type="text/javascript">
+    //初始化路径
+    var myChart;  
+	var input;
+
+        function doCreatChart(specificChartFunction){
+        // myChart = echarts.init(document.getElementById('main')); 
+			
+        
+         	var createDiv=document.getElementById(specificChartFunction.id);
+         	if(createDiv==null){
+         	createDiv=document.createElement("div");  
+         	createDiv.id=specificChartFunction.id;  
+         
+			createDiv.style.width="100%";  
+			//createDiv.style.height=specificChartFunction.height; 
+			
+			if(null!=specificChartFunction.height){
+         	
+				createDiv.style.height=specificChartFunction.height; 
+				
+			}else{
+				createDiv.style.height="240px"; 
+				createDiv.style.margin="5px 0 0 0";
+				createDiv.style.borderRadius="8px";
+				
+			}
+			
+			document.body.appendChild(createDiv);
+         	}
+            myChart = echarts.init(createDiv); 
+          
+            myChart.showLoading({  
+                text : "图表数据正在努力加载..."  
+            }); 
+            var options = specificChartFunction.data;
+			
+        	myChart.setOption(options,true); //先把可选项注入myChart中  
+        
+         	//createDiv.style.borderRadius="8px";
+         	<!--createDiv.style.background="#00BFFF";-->
+
+         	createDiv.style.backgroundImage="url(echarts_back.png)";
+         	createDiv.style.backgroundSize="cover";
+            //myChart.setOption(options,false); //先把可选项注入myChart中  
+            myChart.hideLoading(); 
+            
+     	 	createDiv.onclick=function(){
+            	input=options;
+     	 		forwordCreatChart();
+			};
+           
+          
+          
+    	 	//myChart.on('legendselectchanged', function (options) {
+  			//createDiv.style.background="#00BFFF";
+  			//createDiv.style.backgroundImage="url(echarts_back.png)";
+		//});
+        }
+        
+        
+           function forwordCreatChart(){
+     	 	
+             WebViewJavascriptBridge.callHandler(
+                'submitFromWeb'
+                , input
+                , function(responseData) {
+                
+                   // document.getElementById("show").innerHTML = "send get responseData from java, data = " + responseData
+                }
+            );}
+        
+         function connectWebViewJavascriptBridge(callback) {
+           	
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+               
+            } else {
+                
+                document.addEventListener(
+                    'WebViewJavascriptBridgeReady'
+                    , function() {
+                        callback(WebViewJavascriptBridge)
+                    },
+                    false
+                );
+            }
+        }
+
+        connectWebViewJavascriptBridge(function(bridge) {
+            bridge.init(function(message, responseCallback) {
+            	//console.log('JS got a message');
+               	//console.log('JS got a message', message);
+                var data = {
+                    'Javascript Responds': '测试中文!'
+                   
+                };
+               // console.log('JS responding with');
+              // console.log('JS responding with', data);
+                responseCallback(data);
+                
+            });
+
+            bridge.registerHandler("functionInJs", function(data, responseCallback) {
+            		console.log('注册');
+   					var datas=data+"";
+   					datas = eval("(" + datas + ")"); 
+          			doCreatChart(datas);
+              		//responseCallback('回调结果');
+              
+            });
+            
+            
+           
+        })
+      
+    </script>
+</body>

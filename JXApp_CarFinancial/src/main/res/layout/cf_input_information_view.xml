@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cf_input_info_view"
+    style="@style/MatchWrap.Vertical"
+    android:background="@color/white"
+    android:divider="@drawable/horizon_divider"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:showDividers="middle">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/cf_user_name"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/cf_ic_name" />
+
+        <EditText
+            android:id="@+id/cf_edt_input_name"
+            style="@style/CF_InputInfoEdtText"
+            android:layout_toRightOf="@+id/cf_user_name"
+            android:hint="姓名"
+            android:inputType="textPersonName"
+            android:maxLength="8"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/CF_InputMarkTxtText"
+            android:text="*必填" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/cf_telphone_number"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/cf_ic_telphone" />
+
+        <EditText
+            android:id="@+id/cf_edt_input_tel"
+            style="@style/CF_InputInfoEdtText"
+            android:layout_toRightOf="@+id/cf_telphone_number"
+            android:digits="1234567890"
+            android:hint=" 手机号码"
+            android:inputType="phone|number"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/CF_InputMarkTxtText"
+            android:text="*必填" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/cf_idcard"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/cf_ic_idcard" />
+
+        <EditText
+            android:id="@+id/cf_edt_input_idcard"
+            style="@style/CF_InputInfoEdtText"
+            android:layout_toRightOf="@+id/cf_idcard"
+            android:digits="0123456789Xx"
+            android:hint="身份证号码"
+            android:maxLength="18"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/cf_txt_input_mark"
+            style="@style/CF_InputMarkTxtText"
+            android:text="*必填"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/cf_edt_input_additional"
+        style="@style/CF_InputInfoEdtText"
+        android:hint="您可以简要写写您的贷款需求，对于申请成功率很有帮助哦~"
+        android:lineSpacingExtra="5dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" />
+
+</LinearLayout>

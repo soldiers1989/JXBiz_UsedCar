@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    
+    <ImageView
+        android:id="@+id/welcome_img"
+        style="@style/image_full"
+        android:src="@drawable/welcome"
+        tools:ignore="ContentDescription" />
+
+   <View
+       android:id="@+id/bt_cancel"
+       android:layout_width="60dp"
+       android:layout_height="50dp"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:background="@color/transparent" />
+   
+</RelativeLayout>

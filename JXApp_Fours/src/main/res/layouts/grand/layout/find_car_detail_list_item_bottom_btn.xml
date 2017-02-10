@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_centerVertical="true"
+    android:layout_marginTop="5dp"
+    android:fadingEdge="none"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/fc_detail_list_btn_collect"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:button="@color/transparent"
+        android:drawableLeft="@drawable/find_car_detail_list_item_collect_selector"
+        android:drawablePadding="-20dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="收藏"
+        android:textColor="@drawable/find_car_detail_list_item_tx_selector"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/fc_detail_list_btn_calculate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:button="@color/transparent"
+        android:drawableLeft="@drawable/find_car_detail_list_item_calcu_selector"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:text="购车计算"
+        android:textColor="@drawable/find_car_detail_list_item_tx_selector"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/fc_detail_list_btn_comparison"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:button="@color/transparent"
+        android:drawableLeft="@drawable/find_car_detail_list_item_compare_selector"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="加入对比"
+        android:textColor="@drawable/find_car_detail_list_item_tx_selector"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/fc_detail_list_btn_ask"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:button="@color/transparent"
+        android:drawableLeft="@drawable/find_car_detail_list_item_baseprice_selector"
+        android:drawablePadding="-15dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="询底价"
+        android:textColor="#10a6e2"
+        android:textSize="14dp" />
+
+</LinearLayout>

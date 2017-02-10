@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/start_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/me_titlebar_default"></include>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/me_car_tl_collect"
+        style="@style/MatchWrap"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="46.5dp"
+        android:text=""
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/title_color"
+        app:tabSelectedTextColor="@color/title_color"
+        app:tabTextAppearance="@style/Me_TabLayoutTextAppearance">
+
+        <android.support.design.widget.TabItem
+            style="@style/AutoWrap"
+            android:text="新车" />
+
+        <android.support.design.widget.TabItem
+            style="@style/AutoWrap"
+            android:text="二手车" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/me_car_vp_content"
+        style="@style/MatchMatch"
+        android:background="@color/gray_bg"
+        android:overScrollMode="never" />
+
+</LinearLayout>

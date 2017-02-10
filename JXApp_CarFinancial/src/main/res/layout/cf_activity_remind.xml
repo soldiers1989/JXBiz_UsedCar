@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cf_ll_record"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/gray_bg">
+
+    <include layout="@layout/cf_titlebar" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:id="@+id/cf_ll_space"
+        android:background="@color/gray_bg"
+        android:visibility="gone">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/gray_bg" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/cf_ll_record_head"
+        layout="@layout/cf_activity_record_head"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/cf_ll_record_details_head"
+        layout="@layout/cf_activity_remind_head"
+        android:visibility="gone" />
+
+
+    <RelativeLayout style="@style/MatchWrap.Vertical">
+
+
+        <com.etong.android.frame.widget.pulltofresh.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cf_lv_record"
+            style="@style/MatchMatch"
+            android:layout_above="@+id/cf_ll_record_details_foot"
+            android:background="@color/gray_bg"
+            android:divider="@null"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrDrawable="@drawable/default_ptr_flip"
+            ptr:ptrHeaderBackground="@color/white"
+            ptr:ptrShowIndicator="false"
+            />
+
+        <include
+            layout="@layout/default_empty_listview"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/cf_ll_record_details_foot"
+            style="@style/MatchWrap.Vertical"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_bg"
+            android:visibility="gone">
+
+            <include layout="@layout/cf_activity_record_details_foot" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

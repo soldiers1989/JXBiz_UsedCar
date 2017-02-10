@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/used_car_titlebar_order_defind" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp">
+
+            <RadioGroup
+                android:id="@+id/find_car_vechile_radio_group"
+                style="@style/radio_group"
+                android:layout_height="42dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/used_car_rab_price"
+                    style="@style/radio"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="45dp"
+                    android:checked="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/used_car_title_text_color"
+                    android:text="价格" />
+
+                <RadioButton
+                    android:id="@+id/used_car_rab_mileage"
+                    style="@style/radio"
+                    android:layout_weight="1.5"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="45dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/used_car_title_text_color"
+                    android:text="里程数" />
+                <RadioButton
+                    android:id="@+id/used_car_rab_car_age"
+                    style="@style/radio"
+                    android:layout_height="42dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/used_car_title_text_color"
+                    android:text="车龄" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/used_car_txt_filtrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+           android:layout_alignParentRight="true"
+            android:text="筛选"
+            android:textColor="@color/used_car_10a6e2"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/divider"></View>
+
+    <com.etong.android.frame.widget.pulltofresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/used_car_lv_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderBackground="@color/white"
+        ptr:ptrHeaderTextColor="@color/used_car_10a6e2">
+
+    </com.etong.android.frame.widget.pulltofresh.PullToRefreshListView>
+
+    <include
+        android:visibility="gone"
+        layout="@layout/default_empty_listview"/>
+
+
+</LinearLayout>

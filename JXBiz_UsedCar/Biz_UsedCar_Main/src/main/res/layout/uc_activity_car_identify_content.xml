@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uc_activity_car_identify_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/used_car_EFEFEF"
+    android:orientation="vertical"
+    tools:context="com.etong.android.jxbizusedcar.activity.UC_Car_IdentifyActivity">
+
+    <include layout="@layout/titlebar_otherd_feault" />
+
+    <ImageView
+        android:id="@+id/uc_iv_car_identify_banner_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/uc_content_bg_car_identify">
+
+        <EditText
+            android:id="@+id/uc_edt_identify_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLength="17"
+            android:inputType="textUri|textMultiLine"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="请输入17位车辆VIN码，由字母和数字组成。（车架号）"
+            android:textColorHint="@color/used_car_9a9a9a"
+            android:textSize="12.5sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/uc_btn_identify_check"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/uc_bg_btn_red_select"
+        android:gravity="center"
+        android:text="查询"
+        android:textColor="@drawable/uc_txt_bg_select_white_and_grey"
+        android:textSize="16sp" />
+</LinearLayout>

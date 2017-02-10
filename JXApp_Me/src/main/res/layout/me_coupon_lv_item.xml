@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/me_iv_coupon_image"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@mipmap/me_coupon_noused"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp">
+        <TextView
+            android:id="@+id/me_txt_coupon_title"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/title_color"
+            android:text="购新车"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/me_txt_coupon_title"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp">
+        <TextView
+            android:id="@+id/me_txt_coupon_discount"
+            android:layout_marginTop="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="50sp"
+            android:text="9.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/me_txt_coupon_discount"
+            android:text="折"/>
+
+            <TextView
+                android:id="@+id/me_txt_coupon_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:text="仅限大众朗逸使用"/>
+        </RelativeLayout>
+
+        <TextView
+
+            android:text="有效期:"
+            android:textSize="10sp"
+            android:layout_marginBottom="6dp"
+            android:layout_toLeftOf="@+id/me_txt_coupon_time"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/me_txt_coupon_time"
+            android:text="2016年7月7日—2016年10月6日"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

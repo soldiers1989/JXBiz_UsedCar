@@ -1,0 +1,39 @@
+@media (max-width:769px){
+    section{
+        width:100%;
+    }
+    .container-box{
+        width:100% !important;
+    }
+    .container-box img{
+        width:100% !important;
+    }
+    footer .footer_box{
+        width:100% !important;
+        position:fixed;
+        bottom:0;
+        text-align: center;
+        background-color: #fff;
+        padding: 0.2rem;
+    }
+    .footer_box p{
+        font-size: 0.41rem !important;
+        color:#767676;
+    }
+    .container-box .imformation{
+        padding:0.815rem !important;
+    }
+    .imformation p{
+        font-size: 0.463rem !important;
+        color:#4a4a4a;
+        text-indent: 2em;
+        line-height: 0.7rem;
+    }
+    section{
+        padding-bottom: 0.45rem;
+    }
+    .footer_box p span{
+        font-size:0.8rem;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/used_car_default_bg">
+
+    <include layout="@layout/used_car_titlebar_order_defind" />
+
+    <include layout="@layout/usedcar_selectway_1" />
+
+    <include layout="@layout/usedcar_selectway_2" />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/uc_recomme_iv_car_picture"
+        style="@style/image_logo2"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/uc_recomme_iv_car_picture"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/uc_recomme_txt_car_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="观致-2016款 都市SUV 1.6T 自动致整型"
+                android:textColor="@color/uc_black_quite"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/uc_recomme_txt_car_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="12.5万"
+                android:textColor="@color/uc_second_red"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/uc_recomme_txt_car_date_mileage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2016年04月 1.67万公里"
+                android:textColor="#8e8e8e"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

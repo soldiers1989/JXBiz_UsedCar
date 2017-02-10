@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/models_contrast_root_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:background="@color/white">  <!---->
+
+    <ImageButton
+        android:id="@+id/models_contrast_img_click_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/models_contrast_radiobutton_background"
+        android:clickable="false"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop" /><!---->
+
+    <TextView
+        android:id="@+id/models_contrast_txt_click_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="2016款发货单房合法化的"
+        android:textColor="@color/models_contrast_select_textcolor"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+    <!--android:textColor="@color/title_no_click_color"
+    android:textColor="@color/title_color"-->

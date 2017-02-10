@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:orientation="vertical">
+
+    <include layout="@layout/uc_titlebar_order" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/uc_tl_order_choices"
+        style="@style/MatchWrap"
+        android:layout_height="46.5dp"
+        android:text=""
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/used_car_cf1c36"
+        app:tabSelectedTextColor="@color/used_car_cf1c36"
+        app:tabTextAppearance="@style/UC_Order_TabLayoutTextAppearance">
+
+        <android.support.design.widget.TabItem
+
+            style="@style/AutoWrap"
+            android:text="全部" />
+
+        <android.support.design.widget.TabItem
+            style="@style/AutoWrap"
+            android:text="待付款" />
+
+        <android.support.design.widget.TabItem
+            style="@style/AutoWrap"
+            android:text="已完成" />
+
+        <android.support.design.widget.TabItem
+            style="@style/AutoWrap"
+            android:text="退款详情" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/uc_vp_order_content"
+        style="@style/MatchMatch"
+        android:background="@color/gray_bg"
+        android:overScrollMode="never" />
+</LinearLayout>

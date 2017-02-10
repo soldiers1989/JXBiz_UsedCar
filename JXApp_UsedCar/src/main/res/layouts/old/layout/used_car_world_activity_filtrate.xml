@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/used_car_titlebar_order_defind" />
+
+    <RelativeLayout
+        android:id="@+id/uc_world_rl_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/uc_world_lv_filtrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginBottom="45dp"
+            android:layout_alignParentTop="true"></ListView>
+
+
+        <LinearLayout
+            android:id="@+id/uc_world_car_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/uc_world_btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+
+                android:drawableTop="@mipmap/used_car_reset"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="重置"
+                android:textColor="@color/used_car_10a6e2"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/uc_world_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+
+                android:drawableTop="@mipmap/used_car_cancel"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="取消"
+                android:textColor="@color/used_car_10a6e2"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/uc_world_btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/used_car_10a6e2"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/default_empty_listview"/>
+</LinearLayout>

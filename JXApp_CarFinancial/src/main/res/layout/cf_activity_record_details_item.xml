@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cf_ll_record_details_item"
+    style="@style/MatchMatch.Vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white"
+    android:divider="@drawable/horizon_divider"
+    android:showDividers="end">
+    <LinearLayout
+        style="@style/MatchMatch.Horizontal"
+        android:background="@color/white">
+
+    <TextView
+        android:id="@+id/cf_txt_periods"
+        style="@style/CF_Record_item"
+        android:layout_weight="0.5"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cf_txt_should_also_time"
+        style="@style/CF_Record_item"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cf_txt_should_also_amount"
+        style="@style/CF_Record_item"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cf_txt_real_amount_also"
+        style="@style/CF_Record_item"
+        android:layout_gravity="center_vertical"
+        android:text="" />
+
+    </LinearLayout>
+</LinearLayout>
+

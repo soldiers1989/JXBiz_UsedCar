@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/used_car_img_pic"
+            style="@style/image_logo2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <!--android:paddingRight="4dip"-->
+
+            <TextView
+                android:id="@+id/used_car_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="13dp"
+                android:text="长城M4 2012款1.5手动两驱豪华版"
+                android:textColor="@color/used_car_4a4a4a"
+                android:textSize="15sp" />
+            <!--  gravity="top|left"style="@style/title_smaller"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/used_car_txt_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2014年"
+                            android:textColor="@color/used_car_979797"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/used_car_txt_mileage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="4.2万公里"
+                            android:textColor="@color/used_car_979797"
+                            android:textSize="12sp"
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="18dp"
+                        android:id="@+id/used_car_txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="2016-08-29发布"
+                        android:textColor="@color/used_car_979797"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8">
+
+
+                    <TextView
+                        android:id="@+id/used_car_txt_identification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:drawablePadding="5dp"
+                        android:text="已认证"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/used_car_10A6E2"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/used_car_txt_price_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="售价"
+                            android:textColor="@color/used_car_979797"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/used_car_txt_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="4.70万"
+                            android:textColor="@color/used_car_fd513c"
+                            android:textSize="18sp" />
+                        <!--  style="@style/text_smaller"-->
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <!-- <View style="@style/divider"></View>-->
+</LinearLayout>

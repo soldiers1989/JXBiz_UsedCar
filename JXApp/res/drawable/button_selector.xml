@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   	<item android:drawable="@drawable/button_checked" android:state_checked="true"></item><!-- 选中 -->
+    <item android:drawable="@drawable/button_checked_none" android:state_enabled="true" ></item><!-- 默认 -->
+    <item android:drawable="@drawable/button_checked_none" android:state_enabled="false"></item><!-- 不选中 -->
+   	<item android:drawable="@drawable/button_checked_none"></item>
+</selector>

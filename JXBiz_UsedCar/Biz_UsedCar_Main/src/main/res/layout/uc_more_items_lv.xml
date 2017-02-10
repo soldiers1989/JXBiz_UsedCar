@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/uc_more_txt_listtitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="12dp"
+        android:background="@color/gray_bg"
+        android:gravity="center_vertical"
+        android:text="4S店"
+        android:textColor="#6a6a6a"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white">
+
+        <com.etong.android.frame.widget.EtongNoScrollGridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/uc_more_gv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+    </RelativeLayout>
+
+</LinearLayout>

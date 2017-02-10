@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uc_content_menu_lv_select_brand_title_tv_content"
+    style="@style/MatchWrap"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/uc_content_menu_lv_select_brand_title_tv_item"
+        style="@style/MatchMatch"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:text="A6"
+        android:textColor="@color/used_car_737373"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/find_car_carloan_resulttext_style"
+            android:text="首付  ：" />
+
+        <TextView
+            android:id="@+id/carloan_down_payment"
+            style="@style/find_car_carloan_resulttext_style"
+            android:text="327000元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/find_car_carloan_resulttext_style"
+            android:text="月供 ：" />
+
+        <TextView
+            android:id="@+id/carloan_monthly_payment"
+            style="@style/find_car_carloan_resulttext_style"
+            android:text="23263元" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../JXApp/JXApp.iml" filepath="$PROJECT_DIR$/../JXApp/JXApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JXApp_CarAssistant/JXApp_CarAssistant.iml" filepath="$PROJECT_DIR$/../JXApp_CarAssistant/JXApp_CarAssistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JXApp_CarFinancial/JXApp_CarFinancial.iml" filepath="$PROJECT_DIR$/../JXApp_CarFinancial/JXApp_CarFinancial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JXApp_Find/JXApp_Find.iml" filepath="$PROJECT_DIR$/../JXApp_Find/JXApp_Find.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JXApp_Fours/JXApp_Fours.iml" filepath="$PROJECT_DIR$/../JXApp_Fours/JXApp_Fours.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JXApp_Me/JXApp_Me.iml" filepath="$PROJECT_DIR$/../JXApp_Me/JXApp_Me.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JXApp_Message/JXApp_Message.iml" filepath="$PROJECT_DIR$/../JXApp_Message/JXApp_Message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JXApp_More/JXApp_More.iml" filepath="$PROJECT_DIR$/../JXApp_More/JXApp_More.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JXApp_UsedCar/JXApp_UsedCar.iml" filepath="$PROJECT_DIR$/../JXApp_UsedCar/JXApp_UsedCar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JXModules.iml" filepath="$PROJECT_DIR$/JXModules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Etong_android_frame_as/etong_android_frame_as.iml" filepath="$PROJECT_DIR$/../Etong_android_frame_as/etong_android_frame_as.iml" />
+    </modules>
+  </component>
+</project>

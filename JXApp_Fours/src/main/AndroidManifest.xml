@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.etong.android.jxappfours">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/SwipeBackBaseTheme">
+        <activity
+            android:name=".find_car.collect_search.main_content.Find_Car_MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".find_car.collect_search.main_content.Find_Car_SearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <!-- 修改为添加组件的Activity -->
+        <activity
+            android:name=".models_contrast.main_content.MC_MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".vechile_details.Find_Car_VechileDetailsImageSeeAllActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+
+        <!-- 新抽取出侧滑组件的Activity -->
+        <activity
+            android:name=".order.FO_OrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".vechile_details.Find_Car_VechileDetailsImageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.maintain_progress.Find_car_MaintainProgressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.carset.FC_CarsetActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.config_compare.Find_car_CompareContentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.car_config.Find_car_CarConfigActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.hotkey.Find_car_HotKeyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".vechile_details.Find_Car_VechileDetailsSelectImageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.maintain_progress.Find_car_MaintainDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.find_car_shopcar_calc.Find_car_CalcuTotalActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.find_car_shopcar_calc.Find_car_FinancingPlanActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.find_car_shopcar_calc.Find_car_FirstPayRatioActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.find_car_shopcar_calc.Find_car_LoanYearsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.find_car_shopcar_calc.Find_car_BasicCostActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".find_car.grand.find_car_shopcar_calc.Find_car_CommercialInsuranceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <!-- 修改为添加侧滑组件的activity -->
+        <activity
+            android:name=".find_car.grand.config_compare.FC_CCarSelectActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+        <activity
+            android:name=".order.FM_AddActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".order.Fours_MyCarActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme" />
+
+        <!--
+                <activity
+                    android:name="com.etong.android.frame.utils.PhotoPicUtils"
+                    android:configChanges="keyboardHidden|orientation"
+                                  android:screenOrientation="portrait"             android:theme="@style/SwipeBackBaseTheme"
+                    android:theme="@android:style/Theme.Dialog" />
+        -->
+
+        <activity
+            android:name=".find_car.grand.road_assistance.Find_car_RoadAssistanceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".find_car.grand.carfinance_caclu.FC_FinanceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".find_car.grand.carfinance_caclu.FC_FinanceResultActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackBaseTheme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+    </application>
+
+</manifest>

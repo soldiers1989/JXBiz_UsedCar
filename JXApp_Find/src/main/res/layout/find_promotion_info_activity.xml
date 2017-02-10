@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/find_titlebar_default" />
+
+    <RadioGroup
+        style="@style/radio_group"
+        android:layout_height="45dp">
+
+        <RadioButton
+            android:id="@+id/find_rb_promotion"
+            style="@style/radio_bottom1"
+            android:layout_height="45dp"
+            android:checked="true"
+            android:text="促销车款"
+
+            android:textColor="@color/find_title_text_color" />
+
+        <RadioButton
+            android:id="@+id/find_rb_all_car"
+            style="@style/radio_bottom1"
+            android:layout_height="45dp"
+
+            android:text="全部车款"
+            android:textColor="@color/find_title_text_color" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/find_lv_allcar_content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/find_lv_allcar_list"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            style="@style/layout_list" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/find_rl_promotion"
+        style="@style/layout_full_all"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_above="@+id/find_txt_service_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ListView
+                android:id="@+id/find_lv_promotion_list"
+                style="@style/layout_list"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:layout_above="@+id/find_txt_service_phone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/find_txt_service_phone"
+            style="@style/layout_full_width"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="服务热线:96512"
+            android:textColor="@color/blue_text" />
+    </RelativeLayout>
+
+</LinearLayout>

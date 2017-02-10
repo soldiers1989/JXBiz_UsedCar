@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cf_activity_apply_for"
+    style="@style/MatchMatch"
+    android:background="@color/gray_bg"
+    tools:context="com.etong.android.jxappcarfinancial.activity.CF_ApplyForActivity">
+
+    <include layout="@layout/cf_titlebar" />
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:layout_above="@+id/cf_btn_put_submit"
+        android:layout_below="@+id/titlebar_default"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/MatchWrap.Vertical"
+            android:background="@color/gray_bg">
+
+            <View
+                android:id="@+id/cf_divider_apply_for"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/cf_img_input_banner"
+                style="@style/MatchMatch"
+                android:layout_height="190dp"
+                android:layout_below="@+id/titlebar_default"
+                android:src="@mipmap/cf_ic_apply_banner" />
+
+            <include layout="@layout/cf_input_information_view" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cf_btn_put_submit"
+        style="@style/CF_InputBtn"
+        android:text="提交" />
+
+</RelativeLayout>

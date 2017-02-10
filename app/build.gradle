@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.1'
+
+    defaultConfig {
+        applicationId "com.etong.android.jxapp"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 11                  //  发版本需要修改高versionCode
+        versionName "0.3.1"
+        multiDexEnabled true
+
+        manifestPlaceholders=[
+                JPUSH_PKGNAME : applicationId,        //JPush上注册的包名 
+                JPUSH_APPKEY:"739b7119bf6aead1aa996274",        //JPush上注册的包名对应的appkey. 
+                JPUSH_CHANNEL:"developer-default",              //JPush.暂时填写默认值即可. 
+                PGYER_APPID:"33f67c2e304188f15432763130d9b834", //蒲公英appkey 
+        ]
+//        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false//是否启动混淆
+//            shrinkResources true //是否移除无用资源文件，shrinkResources依赖于minifyEnabled，必须和minifyEnabled一起用
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':JXApp_Me')
+    compile project(':JXApp_Find')
+    compile project(':JXApp_Message')
+    compile project(':JXApp_More')
+    compile project(':etong_android_frame_as')
+    compile project(':JXApp_Fours')
+    compile project(':JXApp_CarFinancial')
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.robolectric:robolectric:3.1.4'
+    testCompile 'org.robolectric:robolectric-annotations:3.1.4'
+    //robolectric针对support-v4的shadows
+    testCompile 'org.robolectric:shadows-support-v4:3.1.4'
+    //添加多包支持
+    testCompile 'org.robolectric:shadows-multidex:3.1.4'
+    //http
+    testCompile 'org.robolectric:shadows-httpclient:3.1.4'
+    //map
+    testCompile 'org.robolectric:shadows-maps:3.1.4'
+}

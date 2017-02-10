@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cf_ll_head_all_or"
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/cf_txt_head_all_or"
+            style="@style/CF_AllOrderRecordHead"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

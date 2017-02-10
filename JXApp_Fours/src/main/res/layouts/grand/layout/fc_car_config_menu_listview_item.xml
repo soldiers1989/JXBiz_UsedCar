@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fc_car_config_menu_listview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:text="基本配置"
+        android:textSize="18sp"
+        android:textColor="@color/fc_car_config_menu_listview_text_selector"/>
+
+    <ImageView
+        android:id="@+id/fc_car_config_menu_listview_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+
+        />
+    <!--android:src="@mipmap/fc_config_menu_listview_check"-->
+    <!--android:background="@drawable/fc_car_config_menu_listview_right_yes_selector"-->
+</RelativeLayout>

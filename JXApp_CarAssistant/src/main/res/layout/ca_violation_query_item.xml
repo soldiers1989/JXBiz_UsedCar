@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ca_ll_violation_item"
+    style="@style/MatchMatch.Vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white">
+    <LinearLayout
+        style="@style/MatchMatch.Horizontal"
+
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ca_txt_number"
+            style="@style/CF_Record_item"
+            android:layout_weight="0.5"
+            android:text="01" />
+
+        <TextView
+            android:id="@+id/ca_txt_illegal_behavior"
+            style="@style/CF_Record_item"
+            android:layout_weight="1.5"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/ca_txt_score"
+            style="@style/CF_Record_item"
+            android:layout_weight="0.5"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/ca_txt_price"
+            style="@style/CF_Record_item"
+            android:layout_weight="0.5"
+            android:text="" />
+
+        <!--<TextView
+            android:id="@+id/ca_txt_status"
+            style="@style/CF_Record_item"
+            android:text="" />-->
+        <TextView
+            style="@style/CF_Record_item"
+            android:layout_weight="0.5"
+            android:text="详情" />
+
+    </LinearLayout>
+</LinearLayout>
+

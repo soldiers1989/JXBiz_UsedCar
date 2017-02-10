@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/find_car_ll_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/find_car_tct_search_content"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/find_car_search_corners"
+            android:drawableLeft="@mipmap/find_car_search_gray"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="搜索车系"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/car_name_color"
+            android:textColorHint="#929292"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/find_car_txt_cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="取消"
+            android:textColor="#4C9ADA"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/find_car_search_more_result_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/find_car_search_more_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:background="@color/white"
+            />
+
+        <include
+            layout="@layout/default_empty_listview"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--
+
+    android:divider="@color/gray"
+
+    android:dividerHeight="1dp"-->
+    <LinearLayout
+        android:id="@+id/find_car_hot_history"
+        style="@style/MatchWrap">
+    <include layout="@layout/find_car_search_hot_history" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+弘高车世界：
+/**项目地址*/ = https://222.247.51.114:1443/svn/supperApp-Android/trunk/JXBiz_UsedCar
+/**接口地址*/ = https://222.247.51.114:1443/svn/Etongcar/document/暮云二手车/市场综合管理系统/01-开发过程文档/ISO9000认证
+
+/**程序 -- 正式环境 */ = "http://test.hg-rzzl.com.cn/etong2sc-app-consumer";
+/**程序 -- 本地环境 */ = "http://192.168.10.167:8090/etong2sc-app-consumer";
+
+/**资讯 -- 正式环境 */ = "http://120.25.98.100:8080/jxapi/";
+/**资讯 -- 本地环境 */ = "http://192.168.10.169:8090/jxapi/";
+

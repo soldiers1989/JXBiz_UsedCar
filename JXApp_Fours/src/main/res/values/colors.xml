@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray_bg">#ffe5e7e9</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#d9d9d9</color>
+    <color name="login_background_color">#1CA3E9</color>
+    <color name="text_color">#4A4A4A</color>
+    <color name="time_color">#ACACAC</color>
+    <color name="more_text">#E62F17</color>
+    <!-- common -->
+    <color name="edit_text_color">#000000</color>
+    <color name="edit_hint_color">#B1B1B1</color>
+    <color name="border_color">#CED2D9</color>
+    <color name="border_other_color">#E6E6E6</color>
+    <color name="button_code_color">#1CA3E9</color>
+    <color name="login_text_color">#FFFFFF</color>
+
+    <color name="login_background_none_color">#CED2D9</color>
+    <color name="code_number_color">#F5A623</color>
+    <color name="type_name_color">#323C4D</color>
+    <color name="state_name_color">#9B9B9B</color>
+    <color name="state_describe_color">#9C9C9C</color>
+    <color name="state_background">#EFF3FB</color>
+    <color name="item_background">#E6E6E6</color>
+    <color name="data_item_border_background">#F6F5F5</color>
+
+
+    <color name="car_name_color">#4a4a4a</color>
+    <color name="title_color">#10a6e2</color>
+    <color name="title_no_click_color">#979797</color>
+
+
+    <color name="grey">#909AAB</color> <!--R:144 G:154 B:171-->
+    <color name="select_blue">#10A6E2</color> <!--R:0 G:110 B:191-->
+
+    <!--grey+second_grey+bule=grey-->
+    <color name="second_grey">#902C14</color><!--R:144 G:44 B:20-->
+    <!--125,158,188-->
+    <color name="base_text_color">#505050</color>
+
+    <!-- grand和购车计算器中的一些颜色值 -->
+    <color name="find_car_detail_content_bottom_selector_bg">#10a6e2</color>
+    <color name="find_car_detail_content_bottom_normal_bg">#FFFFFF</color>
+    <color name="find_car_content_shoppingcar_bottom_pressed">#3a6ab5</color>
+    <color name="find_car_content_shoppingcar_bottom_normal">#4680D1</color>
+    <color name="find_car_calcu_result_more_text">#E62F17</color>
+    <color name="find_car_carloan_home_bg">#0000</color>
+    <color name="find_car_carloan_home_text">#B6B6B6</color>
+    <color name="find_car_carloan_home_contentbg">#EFEFF4</color>
+    <color name="find_car_carloan_home_btbg">#DC4344</color>
+    <color name="find_car_carloan_result_title">#DC4344</color>
+    <color name="find_car_carloan_reslut_text">#747474</color>
+    <color name="find_car_carloan_result_line">#EFEEF0</color>
+    <color name="find_car_carloan_bottom_text">#292929</color>
+    <!--津湘汽车中汽车金融板块中的贷款计算-->
+    <color name="find_car_38A3E3">#38A3E3</color>
+    <color name="find_car_969596">#969596</color>
+</resources>

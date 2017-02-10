@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uc_activity_car_indentify_report_content"
+    style="@style/MatchMatch.Vertical">
+
+    <include layout="@layout/titlebar_otherd_feault"/>
+
+    <LinearLayout
+        android:id="@+id/uc_empty_car_identify_report"
+        style="@style/MatchMatch.Vertical"
+        android:background="@color/used_car_EFEFEF"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/uc_iv_car_identify_show_img"
+            style="@style/MatchWrap"
+            android:src="@mipmap/used_car_loading" />
+
+        <TextView
+            android:id="@+id/uc_tv_car_identify_show_text"
+            style="@style/WrapWrap"
+            android:layout_marginTop="10dp"
+            android:text="报告正在生成中，请稍后..."
+            android:textColor="@color/used_car_c5c5c5" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/uc_webview_car_identify_report"
+        style="@style/MatchMatch" />
+
+</LinearLayout>

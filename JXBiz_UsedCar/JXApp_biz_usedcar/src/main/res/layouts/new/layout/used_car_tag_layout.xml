@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <com.etong.android.jxappusedcar.utils.UC_GrandFlowTagLayout
+        android:id="@+id/used_car_flowTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="7"
+        android:background="@color/gray_bg"></com.etong.android.jxappusedcar.utils.UC_GrandFlowTagLayout>
+
+
+    <TextView
+        android:id="@+id/used_car_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@mipmap/used_car_reset_img"
+        android:drawablePadding="5dp"
+        android:gravity="right"
+        android:text="重置"
+        android:textColor="@color/used_car_afafaf"
+        android:textSize="13sp" />
+</LinearLayout>
